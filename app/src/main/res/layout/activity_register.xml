@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroolView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/inputLinLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_register_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/register_mobile"/>
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="暂不支持170号段"
+                    android:textColorHint="@color/textview_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:minHeight="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/bu_captcha"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/common_btn_yzm"
+                        android:singleLine="true"
+                        android:text="@string/receive_confirm_number"
+                        android:textColor="#4dadff"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/bu_captcha"
+                        style="@style/inputLinLayoutStyle"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_yzm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/confirm_number"/>
+
+                        <EditText
+                            android:id="@+id/et_captcha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:digits="0123456789"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:minHeight="40dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/inputLinLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_register_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/login_password"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="@string/invalidatepwdToast"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:minHeight="40dp"
+                    android:textColorHint="@color/textview_hint"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/inputLinLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_register_confirm_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/confirm_password"/>
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:minHeight="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/inputLinLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_register_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|left"
+                    android:text="用户类型："/>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <RadioButton
+                        android:id="@+id/type_personal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="个人用户"
+                        android:textSize="13sp"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:id="@+id/type_company"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:text="企业用户"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bu_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_btn_bg1"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

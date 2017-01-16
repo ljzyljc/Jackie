@@ -1,0 +1,908 @@
+<resources>
+    <string name="app_name">OSGA</string>
+    <string name="osga">欧索公安</string>
+    <string name="home">首页</string>
+    <string name="matter">事项中心</string>
+    <string name="consult">咨询中心</string>
+    <string name="user">个人中心</string>
+
+    <!--下拉刷新-->
+    <string name="not_updated_yet">暂未更新</string>
+    <string name="time_error">更新时间有误</string>
+    <string name="updated_just_now">1分钟前更新</string>
+    <string name="updated_at">%1$s前更新</string>
+    <string name="sys_exit">退出</string>
+    <string name="done">确定</string>
+    <string name="cancel">取消</string>
+    <string name="title">标题</string>
+    <string name="module_title_news">新闻资讯</string>
+    <string name="module_title_matters">办事事项</string>
+    <string name="module_title_mattersCenter">事项中心</string>
+    <string name="module_title_comment">咨询中心</string>
+    <string name="module_title_notify">通知公告</string>
+    <string name="module_title_pubsrv">便民服务</string>
+    <string name="module_title_pub_info">信息互动</string>
+    <string name="module_title_latest_notify">最新公告</string>
+    <string name="module_title_clue_report">案件线索有奖举报</string>
+    <string name="clue_report_title_content">&#160;&#160;&#160;&#160;&#160;&#160;本平台是吉林省警方推出的违法犯罪线索征集举报平台。只接受归属公安机关管辖的发生在吉林省范围内的非现场、非紧急的刑事、治安案件及其嫌疑人员相关线索，如有需要公安机关立即处理的紧急警情，请拨打"110"报警。\n
+        &#160;&#160;&#160;&#160;&#160;&#160;举报人提供的线索如被公安机关使用，并在案件侦破中发挥作用，由公安机关视情予以奖励。
+</string>
+    <string name="clue_report_remind">特别提醒：案件线索举报提交成功后，请牢记系统反馈的案件举报编号并截屏（拍照）留存，
+        此编号（图片）作为举报人领奖奖励的重要依据。
+    </string>
+    <string name="clue_sure_info">&#160;&#160;&#160;&#160;&#160;&#160;按照《吉林"互联网+公安"综合服务平台案件线索有奖举报办法》规定，匿名或使用虚假身份信息进行举报不发放奖金。
+        </string>
+
+    <string name="module_title_gaosulukuang">高速路况</string>
+    <string name="module_title_12389">12389举报</string>
+    <string name="module_title_map">地图服务</string>
+    <string name="module_title_gaosu">高速路况</string>
+    <string name="module_title_find_police">找警察</string>
+    <string name="module_title_quick_alarm">一键报警</string>
+    <string name="module_title_illegal_parking">违章停车</string>
+    <string name="module_title_desktop">我的桌面</string>
+    <string name="module_title_apps">我的桌面</string>
+    <string name="module_title_my_counsling">我的咨询</string>
+    <string name="module_title_profile">个人中心</string>
+    <string name="module_title_register">用户注册</string>
+    <string name="module_title_sys">地图服务</string>
+    <string name="module_title_zhaoling">失物招领</string>
+    <string name="module_title_quick_pay">快撤理赔</string>
+    <string name="empty" />
+    <string name="title_setting">个人设置</string>
+    <string name="title_search_police_station">寻找警务室</string>
+    <string name="title_search">搜索中心</string>
+    <string name="launch_app_failure">启动应用失败！</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="submit">提交</string>
+    <string name="view">查看</string>
+    <string name="send_error_log">同时发送问题日志</string>
+    <string name="max_size">1000</string>
+    <string name="load_waitting">加载中，请稍候&#8230;</string>
+    <string name="talk_with_police">警民恳谈</string>
+    <string name="move_work">移动办事</string>
+    <string name="police_wei_bo">公安微博</string>
+    <string name="config_apps">配置</string>
+    <string name="requires_item">该项必填</string>
+    <string name="filter">过滤</string>
+    <string name="search_by_key">关键字搜索</string>
+    <string name="all">全部</string>
+    <string name="not_lonin">点击登录</string>
+    <string name="login_in">登录中</string>
+    <string name="load_no_data">暂无数据</string>
+    <string name="login_now">登录中,请稍候</string>
+    <string name="register_now">注册中,请稍候</string>
+    <string name="update_info_now">修改中,请稍候</string>
+    <string name="neterror">网络不太给力</string>
+    <string name="netunavaible">网络不可用，请检查网络</string>
+    <!-- 通知公告 -->
+    <string name="detial_info">详细信息</string>
+    <!-- 事项详细 -->
+    <string name="matters_shixiangmingcheng">事项名称：</string>
+    <string name="matters_shenpizhuti">审批主体：</string>
+    <string name="matters_shixiangxingzhi">事项性质：</string>
+    <string name="matters_banjianleixing">办件类型：</string>
+    <string name="matters_fadingqixian">法定期限：</string>
+    <string name="matters_chengnuoqixian">承诺期限：</string>
+    <string name="matters_banlididian">办理地点：</string>
+    <string name="matters_banlishijian">办理时间：</string>
+    <string name="matters_chuangkoudianhua">窗口电话：</string>
+    <string name="matters_base_info">基本信息</string>
+    <string name="matters_xukeyiju">许可依据</string>
+    <string name="matters_banshicailiao">办事材料</string>
+    <string name="matters_liuchengtu">流程图</string>
+    <string name="matters_matter_fenlei">事项分类：</string>
+    <string name="matters_address_fenlei">区域分类：</string>
+    <string name="matters_arrea">区域</string>
+    <string name="matters_manager_area">辖区</string>
+    <string name="matters_type">分类</string>
+    <string name="matters_matter_name">事项名称：</string>
+    <string name="matters_matter_day">%s个工作日</string>
+    <string name="matters_all">全部</string>
+    <string name="matter_oper_title_declare1">申报</string>
+    <string name="matter_apply_success">申报成功</string>
+    <string name="matter_apply_fail">申报失败</string>
+    <string name="matter_apply">事项申报</string>
+    <string name="matter_title_declare2">申报办件</string>
+    <string name="matter_declare_contact_phone">联系电话：</string>
+    <string name="immediately_matter">即办件</string>
+    <string name="promise_matter">承诺件</string>
+    <string name="matters_not_acquired">事项未获取到</string>
+    <!-- 我的办件 -->
+    <string name="wobanjiantitle">我的办件</string>
+    <string name="profile_matter_wait_solve">待办理%1$s%2$s%3$s</string>
+    <string name="profile_matter_check_in">办理中%1$s%2$s%3$s</string>
+    <string name="profile_matter_solved">已办结%1$s%2$s%3$s</string>
+    <string name="profile_matter_reservation">预约件%1$s%2$s%3$s</string>
+    <string name="apply_time">申请时间：</string>
+    <string name="temporarily_nomatters">暂无办件</string>
+    <!-- 我的办件详细-->
+    <string name="matters_name">办件名称</string>
+    <string name="matters_unit">来办单位</string>
+    <string name="matters_send_time">来办时间</string>
+    <string name="matters_time_node">时间节点</string>
+    <string name="matters_promise_time">承诺时间</string>
+    <string name="matters_contact_people">联系人</string>
+    <string name="matters_number">办件序号</string>
+    <string name="matters_status">办理状态</string>
+    <!-- 便民服务 -->
+    <string name="matter_progress">办件进度查询</string>
+    <string name="matter_id_banli_progress">居住证办理进度查询</string>
+    <string name="matter_id_banli_address">居住证办理点查询</string>
+    <string name="matter_id_progress">身份证办理进度查询</string>
+    <string name="matter_car_weizhang">违法查询</string>
+    <string name="matter_traffic">交通事故查询</string>
+    <string name="matter_driver_scores">驾驶员记分查询</string>
+    <string name="matter_anjian_info">案件查询</string>
+    <string name="matter_rename">重名查询</string>
+    <string name="matter_van_pass">货车通行证查询</string>
+    <string name="matter_zero_pass">临时通行证查询</string>
+    <string name="matter_zhengjian_type">证件类型:</string>
+    <string name="matter_zhengjian_number">证件号码:</string>
+    <string name="pubserv_banjian_progress_check">出入境办件进度查询</string>
+    <string name="pubserv_banjian_progress">办件进度查询</string>
+    <string name="pubserv_banjian_num">办件编号:</string>
+    <string name="pubserv_check_banjian_progress">办理进度查询</string>
+    <string name="pubserv_check_dim_code">二维码查询</string>
+    <string name="matter_find_police">找警察</string>
+    <string name="pubserv_check_progress_info">办件办理进度查询结果信息</string>
+    <string name="pubserv_app_people">申请单位/人：</string>
+    <string name="pubserv_app_project">申请项目：</string>
+    <string name="pubserv_number">办件序号：</string>
+    <string name="pubserv_banjian_status">办件状态：</string>
+    <string name="pubserv_start_date">申请时间：</string>
+    <string name="pubserv_accept_date">受理时间：</string>
+    <string name="pubserv_end_date">办结时间：</string>
+    <string name="pubserv_juzhuzheng_chaxun">居住证办理进度查询</string>
+    <string name="pubserv_idnum">身份证号码：</string>
+    <string name="pubserv_idnum2">身份证号：</string>
+    <string name="pubserv_juzhuzheng_result">居住证办理结果信息</string>
+    <string name="pubserv_name">姓名：</string>
+    <string name="pubserv_username">用户名：</string>
+    <string name="pubserv_sex">性别：</string>
+    <string name="juzhuzheng_status">居住证状态：</string>
+    <string name="is_lingzheng">是否领证：</string>
+    <string name="pubserv_shengfenzheng_chaxun">身份证办理进度查询</string>
+    <string name="pubserv_shouli_num">受理编号：</string>
+    <string name="pubserv_status_shengfenzheng">办理状态：</string>
+    <string name="news_pub_time">发布时间:%s</string>
+    <string name="pubserv_anjianprogress_chaxun">案件办理过程查询</string>
+    <string name="pubserv_jiejing_num">接警编号：</string>
+    <string name="pubserv_chaxun_anjianprogress">查询案件办理过程</string>
+    <string name="pubserv_baoAnTime">报案时间：</string>
+    <string name="pubserv_banLiDanWei">办理单位：</string>
+    <string name="pubserv_banLiStatus">办理状态：</string>
+    <string name="pubserv_YourIdea">你的意见：</string>
+    <string name="pubserv_PinJIa">满意度评价：</string>
+    <string name="pubserv_manyi_1">非常满意</string>
+    <string name="pubserv_manyi_2">一般满意</string>
+    <string name="pubserv_manyi_3">不满意</string>
+    <string name="pub_time">发布时间:</string>
+    <string name="notify_title_summary">发布时间:%1$s&#160;&#160;&#160;发布人:%2$s</string>
+    <string name="pubserv_send_manyi">发布满意度评价信息</string>
+    <string name="result">查询结果</string>
+    <string name="mainUI">桌面</string>
+    <string name="chaXun">查询</string>
+    <string name="fenLei">分类：</string>
+    <string name="diZhi">地址：</string>
+    <string name="residence_address">居住地址：</string>
+    <!-- 下拉组件 -->
+    <string name="reply">浏览%s次</string>
+    <string name="matter_accept_dept">受理单位:</string>
+    <string name="matter_detail">事项详细</string>
+    <string name="loading_title">加载中</string>
+    <string name="exit_confirm">是否确认退出应用？</string>
+    <string name="install_update_hint">新版本号%s:</string>
+    <string name="update_now">是否立即更新?</string>
+    <string name="exit_title">应用退出</string>
+    <string name="version_upgrade">版本更新</string>
+    <string name="download">下载</string>
+    <string name="skip_version">暂不升级</string>
+    <string name="start_download">开始下载</string>
+    <string name="system_setting">系统设置</string>
+    <string name="friend_introduce">好友推荐</string>
+    <string name="noice_guide">新手引导</string>
+    <string name="check_update">检测更新</string>
+    <string name="doing">正在 %1$s</string>
+    <string name="subscription">信息订阅</string>
+    <string name="flow_control">流量控制</string>
+    <string name="download_complete">下载完成，点击安装</string>
+    <string name="create_dir_failure">创建文件下载目录失败</string>
+    <string name="upgrade_file_download_failure">升级包下载失败</string>
+    <string name="upgrade_file_corrupt">升级包损坏</string>
+    <string name="md5check_for_apk">正在校验安装包&#8230;&#8230;&#8230;</string>
+    <string name="sdcard_removed">存储卡已移除</string>
+    <string name="sdcard_checking">正在检测存储卡，请稍候再试</string>
+    <string name="sdcard_unmounted">存储卡未挂载</string>
+    <string name="user_name">用户名/邮箱</string>
+    <string name="user_passwrod">请输入密码</string>
+    <string name="login">登 录</string>
+    <string name="download_precent">已下载 %d%%</string>
+    <string name="user_name_required">请输入用户名</string>
+    <string name="user_pwd_required">请输入密码</string>
+    <string name="file_download_failure">升级安装包下载失败</string>
+    <string name="lastUpdateTime">更新于:%s</string>
+    <string name="module_title_sys_setting">系统设置</string>
+    <string name="update_password">修改密码：</string>
+    <string name="new_password">新密码：</string>
+    <string name="confirm_password">确认密码：</string>
+    <string name="old_password">旧密码：</string>
+    <string name="update_information">保存修改</string>
+    <string name="mine_question">我的咨询</string>
+    <string name="mine_business">我的业务</string>
+    <string name="mine_apps">我的应用</string>
+    <string name="mine_matters">我的办件</string>
+    <string name="mine_lipei">我的理赔</string>
+    <string name="mine_lipeidetail">理赔详情</string>
+    <string name="mine_matters_info">我的办件详细</string>
+    <string name="feedback_msg_hint">请详细描述您的问题</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_help">关于我们</string>
+    <string name="direct_login">直接登录</string>
+    <string name="curr_login_user_msg">你可用账号%s直接登录[</string>
+    <string name="toggle_account">切换账号</string>
+    <string name="toggle_account_end">]</string>
+    <string name="register">注册</string>
+    <string name="app_update">更新</string>
+    <string name="apk_size">(%s)</string>
+    <string name="product_suggestion">意见反馈</string>
+    <string name="version_check_info">版本更新信息</string>
+    <string name="banJian_progress_info">办件办理过程信息</string>
+    <string name="car_violation_info">车辆违章信息</string>
+    <string name="lawyers_appointment_info">律师预约结果信息</string>
+    <string name="lawyers_appointment">预约会见</string>
+    <!-- 注册账户 -->
+    <string name="register_type">注册类型：</string>
+    <string name="register_faren_name">法人姓名：</string>
+    <string name="register_faren_idcard">法人身份证号：</string>
+    <string name="register_personal_customer">个人</string>
+    <string name="register_unit_customer">单位</string>
+    <string name="register_name">用户名：</string>
+    <string name="login_password">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码：</string>
+    <string name="register_name_hint">(可以使用中文，但禁止除[@][.]以外的特殊符号)</string>
+    <string name="register_password">密 码：</string>
+    <string name="register_hint">*</string>
+    <string name="register_true_name">真实姓名：</string>
+    <string name="register_IDCard_hint">请输入真实的身份证</string>
+    <string name="register_contact_address">联系地址：</string>
+    <string name="register_contact_address_hint">请输入家庭住址</string>
+    <string name="register_contact_people">联系人：</string>
+    <string name="register_telephone">电话号码：</string>
+    <string name="register_phone_num_hint">带区号固定电话号码</string>
+    <string name="register_mobile">手机号码：</string>
+    <string name="confirm_mobile">手机号：</string>
+    <string name="confirm_number">验&#160;&#160;证&#160;&#160;码：</string>
+    <string name="receive_confirm_number">获取验证码</string>
+    <string name="last_time">%s秒后重试</string>
+    <string name="register_email">邮箱：</string>
+    <!-- 文件下载相关 -->
+    <string name="downloading">正在下载\u2026</string>
+    <string name="download_file_progress">正在下载 [%s]</string>
+    <string name="wait_to_download">等待下载 [%s]</string>
+    <string name="download_file_complete">下载 [%s] 完毕</string>
+    <string name="download_file_failed">下载 [%s] 失败</string>
+    <string name="download_file_corrupt">文件下载中断</string>
+    <string name="file_not_found">文件未找到</string>
+    <string name="download_document_file_failed">文档下载失败</string>
+    <string name="download_failed_server_busy">服务器忙，下载失败</string>
+    <string name="remove_file_failed">删除文件失败，可能正在被其他程序占用</string>
+    <string name="partial_delete_error">部分文件删除失败</string>
+    <!-- 应用列表 相关 -->
+    <string name="operate_failure">操作失败</string>
+    <string name="temporary_no_apps">暂无应用</string>
+    <string name="app_download_failure">下载失败</string>
+    <string name="retry_download">重试</string>
+    <string name="app_install">安装</string>
+    <string name="uninstall_app">卸载</string>
+    <string name="app_download">下载</string>
+    <string name="app_installing">正在安装</string>
+    <string name="app_installing_process">正在安装\u2026</string>
+    <string name="app_waiting_to_download">等待下載\u2026</string>
+    <string name="app_desc_not_available">暂无描述</string>
+    <string name="app_market">应用市场</string>
+    <string name="applist">应用列表</string>
+    <string name="app_detail">应用详情</string>
+    <string name="clean">清空</string>
+    <string name="app_history">历史版本信息</string>
+    <string name="sdcard_not_exist_download_failure">SD卡未加载，无法下载</string>
+    <string name="app_size_computing">正在计算大小\u2026</string>
+    <string name="app_validity_check">验证安装包\u2026</string>
+    <string name="str_app_corrupt">安装包已损坏，请重新下载</string>
+    <string name="app_toast_download">开始下载 %1$s</string>
+    <string name="app_request_timeout">请求超时</string>
+    <!-- 分享好友 -->
+    <string name="share_content">我正在使用吉林公安手机App，推荐您也使用！下载地址: http://%1$s:%2$s/econsole/app/download.html</string>
+    <string name="push_message">消息中心</string>
+    <string name="news_feature">最新功能</string>
+    <string name="news_feature_summary">新增处罚通告、报案跟踪功能</string>
+    <string name="weizhang">最新违章信息</string>
+    <string name="bjzt">最新办件状态</string>
+    <string name="kttz">最新恳谈通知</string>
+    <string name="lktz">最新路况通知</string>
+    <string name="lktz_smmary">人民路拥堵不堪重负建议</string>
+    <string name="kttz_summary">最近我局与孤寡老人</string>
+    <string name="bjzt_summary">本局近期抓获小区盗窃人数26人</string>
+    <string name="weizhang_summary">西环路近期违章停车数量超出去年&#8230;</string>
+    <string name="one">5</string>
+    <string name="three">5</string>
+    <string name="module_apps_market">应用广场</string>
+    <string name="module_apps_search">查询中心</string>
+    <string name="search">查询</string>
+    <string name="search_matters">事项查询</string>
+    <string name="shai_xuan">筛选</string>
+    <string name="search_ok">完成</string>
+    <string name="app_curr_version">当前版本%s</string>
+    <string name="account_logout">账户退出</string>
+    <string name="account_logout_confirm">退出当前用户？</string>
+    <string name="start">开始使用</string>
+    <string name="app_installed">已安装</string>
+    <string name="app_uninstall">应用管理</string>
+    <string name="my_desktop">我的桌面</string>
+    <string name="user_login">用户登录</string>
+    <string name="matter_center">事项中心</string>
+    <string name="consult_matter">办事咨询</string>
+    <string name="appointment_matters">预约事项</string>
+    <string name="partial_delete_failure">部分文件删除失败</string>
+    <string name="short_cut">快捷方式</string>
+    <string name="add_short_cut">确认添加至首页？</string>
+    <!-- 系统设置 -->
+    <string name="clean_cache">清理缓存</string>
+    <string name="push_message_service">消息推送服务</string>
+    <string name="net_mode">无图模式</string>
+    <string name="update">更新</string>
+    <string name="download_failure">下载失败</string>
+    <string name="network_invailable">网络不可用</string>
+    <string name="content_is_null">内容为空</string>
+    <string name="err_connect_timeout">连接超时</string>
+    <string name="err_io">IO错误</string>
+    <string name="json_parse_ex">数据解析错误</string>
+    <string name="network_error">网络错误</string>
+    <string name="foreground_service_started">启动后台服务</string>
+    <string name="list_loading">正在加载&#8230;</string>
+    <string name="pls_input_login_name">请输入登录用户名</string>
+    <string name="pls_input_login_pwd">请输入登录密码</string>
+    <string name="select_all">全部</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="login_succ">登录成功</string>
+    <string name="no_new_version">当前为最新版本</string>
+    <string name="cache_size">当前共有缓存%s</string>
+    <string name="share_by_contacts">通过通讯录邀请好友</string>
+    <string name="qq_zone">QQ空间</string>
+    <string name="wechat">微信</string>
+    <string name="police_station">警务室</string>
+    <!-- 微信分享 -->
+    <string name="text_share">文字分享</string>
+    <string name="image_upload">图片分享（本地图片）</string>
+    <string name="image_upload_bitmap">图片分享（Bitmap对象）</string>
+    <string name="image_upload_url">图片分享（网络图片）</string>
+    <string name="music_upload">音乐分享</string>
+    <string name="video_upload">视频分享</string>
+    <string name="webpage_upload">网页分享（本地图片）</string>
+    <string name="webpage_upload_bitmap">网页分享（Bitmap对象）</string>
+    <string name="webpage_upload_url">网页分享（网络图片）</string>
+    <string name="app_upload">应用分享（携带文件）</string>
+    <string name="app_upload_extinfo">应用分享（携带脚本）</string>
+    <string name="file_upload">文件分享</string>
+    <string name="share_to_moment">分享到朋友圈</string>
+    <string name="invite_contact_friends">邀请好友</string>
+    <string name="sms_sending">消息发送中&#8230;</string>
+    <string name="sms_send_fail">消息发送失败</string>
+    <string name="sms_send_complete">消息发送完毕</string>
+    <string name="cell_network_unavailable">手机网络不可用</string>
+    <string name="filtrate">筛选</string>
+    <string name="all_contacts">全部联系人</string>
+    <string name="select">选择</string>
+    <string name="send_message">发送信息</string>
+    <string name="pls_input_phone_num">请选择电话号码</string>
+    <string name="pls_input_sugg">请输入反馈意见</string>
+    <string name="uninstall">卸 载</string>
+    <string name="crash_hint_msg">很抱歉，程序出现异常，即将退出</string>
+    <string name="navigate_failure">线路导航失败</string>
+    <string name="no_result_find">未找到结果</string>
+    <string name="search_failure">搜索失败</string>
+    <string name="locate_suzhou">苏州</string>
+    <string name="pls_input_point">请输入坐标点</string>
+    <string name="locate_failure">定位失败</string>
+    <string name="app_not_installed">应用未安装</string>
+    <string name="default_sms_template">我正在使用掌上公安，欢迎您也下载使用，下载地址:%s</string>
+    <string name="alter_info_success">修改信息成功</string>
+    <string name="refresh">刷新</string>
+    <string name="module_title_police_weibo">公安微博</string>
+    <string name="click_load_more">点击加载更多</string>
+    <string name="release_load_more">松开载入更多</string>
+    <string name="connect_timeout">连接超时</string>
+    <string name="error_io">IO错误</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <!--下拉列表 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="no_refresh">未更新</string>
+    <string name="submitting">正在提交&#8230;</string>
+    <string name="quick_share">快捷分享</string>
+    <!--oks_strings.xml搬移过来-->
+    <string name="finish">完成</string>
+    <string name="sharing">分享操作正在后台进行…</string>
+    <string name="share_to">分享到</string>
+    <string name="share">分享</string>
+    <string name="multi_share">图文分享</string>
+    <string name="share_completed">分享成功</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="list_friends">%s的朋友</string>
+    <string name="share_failed">分享失败</string>
+    <!--ssdk_strings.xml搬移过来-->
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="website">http://www.shareSDK.cn</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="tencentweibo">腾讯微博</string>
+    <string name="qzone">QQ空间</string>
+    <string name="wechat_firend">微信好友</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="renren">人人网</string>
+    <string name="kaixin">开心网</string>
+    <string name="email">邮件</string>
+    <string name="shortmessage">信息</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <string name="neteasemicroblog">网易微博</string>
+    <string name="douban">豆瓣</string>
+    <string name="youdao">有道云笔记</string>
+    <string name="evernote">印象笔记</string>
+    <string name="linkedin">Linked In</string>
+    <string name="googleplus">Google+</string>
+    <string name="foursquare">FourSquare</string>
+    <string name="qq">QQ</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="flickr">Flickr</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="vkontakte">VK</string>
+    <string name="instagram">Instagram</string>
+    <!--申报办件-->
+    <string name="declare_person">申&#160;&#160;请&#160;&#160;人：</string>
+    <string name="declare_phone">联系电话：</string>
+    <string name="declare_item">申请项目：</string>
+    <string name="declare_attach">上传附件：</string>
+    <string name="input_declare_attach">请选择附件：</string>
+    <string name="declare_attach_name">附件名称：</string>
+    <string name="appointment_time">预约时间：</string>
+    <string name="appointment_address">预约地点：</string>
+    <string name="id_num_error">身份证号码输入有误，请重输</string>
+    <string name="error_character">非法字符，请重新输入！</string>
+    <string name="register_success">注册成功</string>
+    <string name="input_reg_name">请输入用户名！</string>
+    <string name="input_password">请输入密码！</string>
+    <string name="input_confirm_password">请输入确认密码！</string>
+    <string name="input_contact_people">请输入联系人！</string>
+    <string name="input_declare_people">请输入申请人！</string>
+    <string name="input_true_name">请输入真实姓名！</string>
+    <string name="input_true_companyName">请输入企业名称！</string>
+    <string name="input_true_companyCode">请输入真实组织机构代码！</string>
+    <string name="input_true_faren">请输入真实法人名称！</string>
+    <string name="input_true_contact">请输入联系人名称！</string>
+    <string name="input_idcard_num">请输入身份证号码！</string>
+    <string name="input_contact_address">请输入联系地址！</string>
+    <string name="input_contact_detailaddress">请输入详细地址！</string>
+    <string name="input_telephone">请输入电话号码！</string>
+    <string name="input_mobile">请输入手机号码</string>
+    <string name="password_differenet_confirm_pass">密码和确认密码不一致，请重新输入！</string>
+    <string name="password_can_not_null">输入密码不能为空</string>
+    <string name="dif_newpasswd_oldpasswd">密码和确认密码不一致，请重新输入！</string>
+    <string name="error_old_pass">输入的旧密码错误请重新输入</string>
+    <string name="name_cannot_null">姓名不能为空</string>
+    <string name="idcar_num_cannot_null">身份证号不能为空</string>
+    <string name="address_cannot_null">居住地址不能为空</string>
+    <string name="phone_cannot_null">电话号码不能为空</string>
+    <string name="take_photo">拍  照</string>
+    <string name="check_from_pictures">从相册中选择</string>
+    <string name="cancel2">取 消</string>
+    <string name="phone_format_err">电话号码格式错误</string>
+    <string name="phone_number_err">请输入正确手机号码</string>
+    <string name="pls_input_phone">请输入联系电话！</string>
+    <string name="input_appointment_time">请选择预约时间</string>
+    <string name="input_appointment_address">请输入预约地点</string>
+    <string name="attach_need_sdcard">附件功能需要SD卡支持</string>
+    <string name="image_zoom">查看大图</string>
+    <string name="matter_declare_submit">申  报</string>
+    <string name="matter_declare_address_hint">不超过30字</string>
+    <string name="matter_declare_person_hint">不超过20字</string>
+    <!-- 搜一搜-->
+    <string name="walk_plan">步行方案</string>
+    <string name="drive_plan">驾车方案</string>
+    <string name="bus_plan">公交方案</string>
+    <string name="more">更多</string>
+    <string name="closed">关闭</string>
+    <string name="surrounding_info">雷达扫描到您屏幕范围内有</string>
+    <string name="detail">详情</string>
+    <string name="pop_route">路径规划</string>
+    <string name="last_page">上一页</string>
+    <string name="next_page">下一页</string>
+    <string name="init_error">初始化错误</string>
+    <string name="need_correct_condition">输入正确的检索条件！</string>
+    <string name="need_correct_mapkey">授权失败</string>
+    <string name="cal_rout_fail">路径规划失败</string>
+    <string name="sorry_about_noresult">抱歉，未找到结果</string>
+    <string name="get_location_first">请先定位成功</string>
+    <string name="locating">正在定位....</string>
+    <string name="my_positon">我的位置</string>
+    <string name="location_succeed">成功，查看详情页面</string>
+    <!--警民恳谈-->
+    <string name="police_communion">警民恳谈</string>
+    <string name="inview_subject">恳谈主题:</string>
+    <string name="inview_time">恳谈时间:</string>
+    <string name="inview_host">恳谈嘉宾:</string>
+    <string name="inview_content">主要内容:</string>
+    <string name="click_to_reload">点击屏幕 重新加载</string>
+    <!--路况播报-->
+    <string name="roadbroadcast_changtong">畅通</string>
+    <string name="roadbroadcast_huanman">行车缓慢</string>
+    <string name="roadbroadcast_yongdu">拥堵</string>
+    <string name="roadbroadcast_all_loaded">已全部加载</string>
+    <string name="roadbroadcast_no_data">没有数据</string>
+    <string name="please_select_date">请选择日期</string>
+    <string name="please_select_time">请选择时间</string>
+    <!-- 二维码扫描 -->
+    <string name="str_align_with_barcode">请将扫描框对准二维码</string>
+    <string name="scan_barcode_failed">扫描失败</string>
+    <string name="init_barcode_scan_failed">初始化扫描失败\u2026</string>
+    <string name="gaweibo">公安微博</string>
+    <string name="gaweixin">公安微信</string>
+    <string name="weather_report">天气预报</string>
+    <string name="no_data">暂无数据</string>
+    <string name="violation_motor_info_query">机动车信息查询</string>
+    <string name="violation_license_query">驾驶证信息查询</string>
+    <string name="violation_suzhou_weather_cn">苏州天气</string>
+    <string name="violation_suzhou_weather_en">SUZHOU WEATHER</string>
+    <string name="violation_date">2013-12-24  星期二</string>
+    <string name="violation_weather_value1">晴转多云</string>
+    <string name="violation_weather_value2">北风3-4级</string>
+    <string name="violation_weather_value3">洗车指数:不宜</string>
+    <string name="violation_weather_value4">洗车指数:不宜</string>
+    <string name="licensequery_tb_title">驾驶证违法查询</string>
+    <string name="query_tb_oper_title">提交</string>
+    <string name="motorquery_tb_title">机动车违法查询</string>
+    <string name="brandselect_tb_title">车型选择</string>
+    <string name="query_result">违法信息</string>
+    <string name="query_result_oper_title">处理地址</string>
+    <string name="query_result_done">已交款</string>
+    <string name="query_result_undone">未交款</string>
+    <string name="deal_address">处理地址</string>
+    <!--<string name="motorquery_car_num">车牌号</string>-->
+    <string name="motorquery_car_username">当事人姓名</string>
+    <string name="motorquery_car_num">号码号牌</string>
+    <string name="motorquery_car_num_text">吉</string>
+    <!--<string name="motorquery_chejia_num">车架号</string>-->
+    <string name="motorquery_please_input_chejia_num">请输入您车架号后7位</string>
+    <string name="motorquery_message">请求已提交，查询结果稍后将以站内消息发送给您，请注意查收。</string>
+    <string name="motorquery_method2">方法二：条形码扫描</string>
+    <string name="motorquery_mothod1">手动输入车辆信息</string>
+    <string name="motorquery_select_type">请选择车型</string>
+    <string name="brandselect_type_select">车型选择</string>
+    <string name="brandselect_brand_select">品牌选择</string>
+    <string name="licensequery_please_input_license_num">请输入驾驶证号</string>
+    <string name="licensequery_please_input_case_num">请输入档案编号</string>
+    <string name="motorquery_please_select_brand">请选择车型</string>
+    <string name="please_input_chepai_num">请输入车牌号</string>
+    <!--<string name="please_input_chejia_num">请输入车架号</string>-->
+    <string name="please_input_chejia_num">请输入发动机后六位</string>
+    <string name="last_road_broadcast_info">路况</string>
+    <string name="no_update_record">暂无</string>
+    <string name="system_messg">消息</string>
+    <string name="module_title_wzcx">违法查询</string>
+    <string name="traffic_voilation">违章</string>
+    <string name="my_matters">我的办件</string>
+    <string name="index_temperature">℃</string>
+    <string name="suzhou_today_oil_prices">苏州·今日油价</string>
+    <string name="today_oil_prices">TODAY_OIL_PRICES</string>
+    <string name="gas_station">加油站</string>
+    <string name="violation_info_query">信息查询</string>
+    <string name="gas_station_map">地图</string>
+    <string name="gas_station_detail_title">加油站信息</string>
+    <string name="gas_prices_list">油价列表：</string>
+    <string name="gas_station_detail_jiucuo">我要纠错</string>
+    <string name="gas_station_map_title">加油站点</string>
+    <string name="temperature_range">%1$s~%2$s</string>
+    <string name="refresh_at">发布时间:%s</string>
+    <string name="default_temperature">16</string>
+    <string name="default_weather">晴</string>
+    <string name="default_colud">东风  3~4级</string>
+    <string name="default_temperature_range">12℃~18℃</string>
+    <string name="gas_station_update_title">修改加油站</string>
+    <string name="gas_station_please_input">输入文字.....</string>
+    <string name="gas_station_update_address">地址：</string>
+    <string name="gas_station_update_name">名称：</string>
+    <string name="gas_station_update_jiayouzhan">加油站：</string>
+    <string name="youjialiebiao">油价列表：</string>
+    <string name="gas_num_0">0#:</string>
+    <string name="gas_num_93">92#:</string>
+    <string name="gas_num_90">90#:</string>
+    <string name="gas_num_97">95#:</string>
+    <string name="gas_update_num_97">97# : </string>
+    <string name="gas_update_num_93">93# : </string>
+    <string name="gas_update_num_0">0#   : </string>
+    <string name="gas_update_num_90">90# : </string>
+    <string name="hint_num_89">89#</string>
+    <string name="hint_num_0">0#</string>
+    <string name="hint_num_97">97#</string>
+    <string name="hint_num_93">93#</string>
+    <string name="biyadi">比亚迪</string>
+    <string name="query_result_num">编号:</string>
+    <string name="query_result_time">时间:</string>
+    <string name="query_result_address">地点:</string>
+    <string name="query_result_fine">罚款:</string>
+    <string name="query_result_state">状态:</string>
+    <string name="query_result_license_num">驾驶证号</string>
+    <string name="license_bianhao">档案编号</string>
+    <string name="curr_date_format">%1$d年%2$d月%3$d日 周%4$s</string>
+    <string name="loging">正在登录，请稍候&#8230;</string>
+    <!--推送相关-->
+    <string name="unread_tab">未读</string>
+    <string name="alreadyread_tab">已读</string>
+    <string name="delete">删除</string>
+    <string name="others">其他</string>
+    <string name="car_info">车辆信息</string>
+    <string name="function_closed">该功能暂未开放</string>
+    <string name="manager_center">管理中心</string>
+    <string name="manager_detail">事项详情</string>
+    <string name="car_manager">车辆管理</string>
+    <string name="driver_license_manager">驾驶证管理</string>
+    <string name="add_car">添加车辆</string>
+    <string name="select_car_brand">请选择您爱车的品牌</string>
+    <string name="add_driver_license">添加驾驶证</string>
+    <string name="select_driver_license">点击进入添加页面添加</string>
+    <string name="upload_max_count">最多上传两张</string>
+    <string name="load_full_data">已加载全部数据</string>
+    <string name="new_menu">最新</string>
+    <string name="hot_menu">最热</string>
+    <string name="abscond_menu">出境</string>
+    <string name="loading_now">加载中...</string>
+    <string name="open_app_failed">应用打开失败</string>
+    <string name="auto_login">下次自动登入</string>
+    <string name="forget_pass">忘记密码?</string>
+    <string name="register_agrement">会员注册协议</string>
+    <string name="agree">同意</string>
+    <string name="disAgree">不同意</string>
+    <string name="see_example">查看样图</string>
+    <string name="close_example">关闭样图</string>
+    <string name="id_card_num">身份证\n证件照:</string>
+    <string name="photo_id_card">拍摄身份证</string>
+    <string name="name_or_email">用户名/邮箱</string>
+    <string name="common_register">普通注册</string>
+    <string name="real_name_register">实名注册</string>
+    <string name="captcha_not_get">用户激活码将发送到您的手机中，如果您在注册过程中收不到激活码，可以拨打0512-68621436周一至周六9:00--17:00与我们取得联系，我们将及时处理。\n实名认证的用户系统会在5个工作日内审核完成！</string>
+    <string name="alert_real_register">提醒：实名认证用户可获得更多权限...</string>
+    <string name="real_register_info">实名认证(点击填写)</string>
+    <string name="input_photo_idcard">请拍身份证!</string>
+    <string name="passwd_length_less">密码长度不能小于6位</string>
+    <string name="alert">提醒</string>
+    <string name="common_account_permission">普通注册用户拥有的特权:</string>
+    <string name="realname_account_permission">实名认证注册用户拥有的特权:</string>
+    <string name="prevention_knowledge">防范知识</string>
+    <string name="violation_queries_payment">违章查询及缴费</string>
+    <string name="quick_withdraw_claims">快撤理赔</string>
+    <string name="matters_appointment">事项申请和预约</string>
+    <string name="input_yzm">请输入验证码</string>
+    <string name="see_id_photo">查看证件</string>
+    <string name="delete_and_retake">删除重拍</string>
+    <string name="catalogs">警种</string>
+    <string name="method">方式</string>
+    <string name="i_want_ask">我要提问</string>
+    <string name="consult_alert">提示：目前办事咨询只提供关于吉林省公安局行政许可、行政审批和管理服务事项的咨询.</string>
+    <string name="advisory_message">留言咨询</string>
+    <string name="input_text_last">(%1$s/%2$s</string>
+    <string name="advisory_message_alert">提示：目前留言咨询只提供关于吉林省公安局行政许可、行政审批和管理服务事项的咨询。</string>
+    <string name="online_declare">在线申报</string>
+    <string name="appoint">预约</string>
+    <string name="select_column">已添加应用</string>
+    <string name="click_add">点击添加</string>
+    <string name="toast_connect_net_failed">网络连接失败，请连接网络</string>
+    <string name="key_info_serach">请输入事项名称的关键字</string>
+    <string name="monitor_keyword_serach">请输入监控点关键字</string>
+    <string name="app_already_uninstalled">应用已更改或删除，请重新下载安装</string>
+    <string name="fetch_validate_first">请先获取验证码</string>
+    <string name="validate_incorrect">验证码输入有误</string>
+    <string name="ask_day">提问日期</string>
+    <string name="day_to_day">--</string>
+    <string name="no_permission_access_level_1">该功能需登录后使用</string>
+    <string name="no_permission_access_level_2">该功能需实名认证后使用</string>
+    <string name="no_permission">访问受限</string>
+    <string name="shiming_renzheng">是否立即实名认证</string>
+    <string name="matter_declare">事项申报</string>
+    <string name="van_zero_pass">货车临时通行证</string>
+    <string name="unit_person_info">来办单位(个人)信息</string>
+    <string name="next_step">下一步</string>
+    <string name="need_sd_card_ammount">请插入存储卡</string>
+    <string name="sd_unusual">存储图片异常，请确认已插入SD卡</string>
+    <string name="need_postal_service">我需要邮政服务</string>
+    <string name="postal_service">邮政服务</string>
+    <string name="txt_alert">提示：</string>
+    <string name="mould">模板</string>
+    <string name="select_mould">选择模板</string>
+    <string name="police_detect">侦查阶段&#160;</string>
+    <string name="certificate_no">执业证号:</string>
+    <string name="appointment_confirm_no">预约验证号:</string>
+    <string name="appintment_time">会见时间:</string>
+    <string name="office_name">事务所名称:</string>
+    <string name="other_contact">其他联系方式:</string>
+    <string name="contact_way">联系方式</string>
+    <string name="place_of_detention">羁押场所:</string>
+    <string name="police_zixun">警务资讯</string>
+    <string name="suzhou">苏州</string>
+    <string name="net_change">内外网切换</string>
+    <string name="alert_feedback">感谢你对本软件使用的反馈，请填写正确的手机号,QQ或Email，以便我们及时为你解决问题</string>
+    <!-- 注册模块 -->
+    <string name="invalidatepwdToast">请输入6-20位密码</string>
+    <string name="forgetpwd">忘记密码</string>
+    <string name="update_bind">修改绑定</string>
+    <string name="wait_other_upload">等待对方上传信息....</string>
+    <string name="quickpay_sucess_upload">本系统适用范围为轻微交通事故，为减少由此引发交通拥堵，双方当事人可将车牌号码、车损部位拍照后，并填报相关信息，通过本系统上传，并快速撤离现场，上传成功的，视作报警，报警效力等同于“110”报警。对您上传的车损图片保险公司将作为理赔依据。如双方认为难以协调，需交警到现场，可拨打“110”报警。</string>
+    <string name="profiletitle">账户信息</string>
+    <string name="quick_pay_alert">
+一、交通事故快速处理的法律依据：\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;《中华人民共和国道路交通安全法》第七十条规定“在道路上发生交通事故，未造成人身伤亡，当事人对事实及成因无争议的，可以即行撤离现场，恢复交通，自行协商处理损害赔偿事宜。在道路上发生交通事故，仅造成轻微财产损失，并且基本事实清楚的，当事人应当先撤离现场再进行协商处理”。《中华人民共和国道路交通安全法实施条例》第八十六条规定“机动车与机动车、机动车与非机动车在道路上发生未造成人身伤亡的交通事故，当事人对事实及成因无争议的，在记录交通事故的时间、地点、对方当事人的姓名和联系方式、机动车牌号、驾驶证号、保险凭证号、碰撞部位，并共同签名后，撤离现场，自行协商损害赔偿事宜”。\n二、什么是事故快撤理赔\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;车辆在交强险有效期内发生轻微交通事故，当事人双方使用手机填写事故信息，上传至交巡警支队系统平台，得到系统响应后快速撤离事故现场，事故双方共同到达快赔点后，由保险公司快速进行定损、理赔的事故处理模式。\n    三、符合快速撤离现场不撤离现场的处罚依据\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;对符合快速处理条件的，当事人应当自行撤离现场而未撤离的，交通警察应当责令当事人撤离现场;造成交通堵塞的，根据《中华人民共和国道路交通安全法》第七十条第三款之规定，对驾驶人处以200元罚款。驾驶人有其他道路交通安全违法行为的,依法一并处罚。\n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;法律责任：当事人故意制造虚假交通事故骗取保险金的，保险公司不承担赔偿责任，公安机关将依法进行严厉查处，构成犯罪的，依法追究刑事责任。\n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;对事发后逃逸的当事人，公安机关交通管理部门将依法进行处罚。\n四、具有下列情形的道路交通事故不适用现场快撤及自行协商：\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;伤的；
+</string>
+    <string name="save">保存</string>
+    <string name="update_noti">升级通知</string>
+    <string name="system_noti">系统通知</string>
+    <string name="real_name">真实姓名：</string>
+    <string name="reg_time">注册时间：</string>
+    <string name="contact_tel">联系电话：</string>
+    <string name="monitor_add_title">收藏监控点</string>
+    <string name="monitor_add_oper">新增</string>
+    <string name="monitor_line">线路</string>
+    <string name="monitor_manager">监控点查看</string>
+    <string name="sync_setting">同步设置</string>
+    <string name="laucher_app_failure">启动应用失败</string>
+    <string name="info_bind">信息绑定</string>
+    <string name="add">添加</string>
+    <string name="cancel_operate">取消操作</string>
+    <string name="quickpay_claims">理赔点</string>
+    <string name="move_car">堵路移车</string>
+    <string name="plate_number">车牌号码：</string>
+    <string name="please_input_plate_number">请输入车牌号码</string>
+    <string name="check">查询</string>
+    <string name="id_number">身份证号码：</string>
+    <string name="enter_id_number">请输入身份证号码</string>
+    <string name="name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：</string>
+    <string name="contact_type">联系方式：</string>
+    <string name="complaint_subject">投诉主题：</string>
+    <string name="complaint_content">投诉内容：</string>
+    <string name="commit">提交</string>
+    <string name="content_limit">(100字以内)</string>
+    <string name="onekey_check">一键核查</string>
+    <string name="activation_code">验&#160;&#160;证&#160;&#160;码：</string>
+    <string name="get_activation_code">获取验证码</string>
+    <string name="register_contact_people1">联&#160;&#160;系&#160;&#160;人：</string>
+    <string name="company_name">企业名称：</string>
+    <string name="company_code">组织结构代码：</string>
+    <string name="qxzrq">请选择日期</string>
+    <string name="qsrsxmc">请输入事项名称</string>
+    <string name="qsrjbjg">请输入举报事项经过</string>
+    <string name="commit_success">提交成功</string>
+    <string name="jubao_commit_success">12389举报成功</string>
+    <string name="commit_waiting">正在提交...</string>
+    <string name="write_title">请输入咨询标题</string>
+    <string name="write_content">请输入咨询内容</string>
+    <string name="get_department">请选择部门</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="ctid_app_name">公安无凝视</string>
+    <string name="ctid_app_name_overlight">人像活体检测</string>
+    <string name="ctid_app_name_picquality">人像质量判断</string>
+    <string name="ctid_str_main">活体检测</string>
+    <string name="ctid_str_main_btn_quality_judge">质量判断</string>
+    <string name="ctid_str_main_btn_start_check">开始检测</string>
+    <string name="ctid_str_main_btn_setting">设        置</string>
+    <string name="ctid_str_main_btn_tip">左看：头向左偏，朝着卡通图看\n右看：头向右偏，朝着卡通图看</string>
+    <string name="ctid_str_live_txt_title">请将脸置于提示框内</string>
+    <string name="ctid_str_exit">很抱歉,程序出现异常,即将退出！</string>
+    <string name="ctid_attention_not_shake">眼睛请盯着绿色圆圈，不要晃手机和头</string>
+    <string name="ctid_btn_inc">&#62;</string>
+    <string name="ctid_btn_dec">&#60;</string>
+    <string name="ctid_btn_return">返回</string>
+    <string name="ctid_btn_resume">重新开始(10s)</string>
+    <string name="ctid_friendly_tip_0">未采集到合格的人像,再试一次吧!</string>
+    <string name="ctid_friendly_tip_1">恭喜您,检测成功!</string>
+    <string name="ctid_friendly_tip_2">很遗憾,检测失败!</string>
+    <string name="ctid_friendly_tip_3">操作时间过长!</string>
+    <string name="ctid_look_at_me">看着我</string>
+    <string name="ctid_pic_decting">数据处理中</string>
+    <string name="ctid_no_face">没有检测到人脸</string>
+    <string name="ctid_multi_face">检测到多个人脸</string>
+    <string name="ctid_no_best_pic">未找到最佳采集照片</string>
+    <string name="ctid_camera_not_start">相机无法启动，请稍后重试或重新启动手机！</string>
+    <string name="ctid_no_SDCard">"未发现SD卡，请稍后重试或重新启动手机！"</string>
+    <string name="ctid_no_facing_front_camera">抱歉打开前置摄像头失败，请稍后再试</string>
+    <string name="ctid_no_pass_reason_no_face">没有检测到人脸</string>
+    <string name="ctid_no_pass_reason_multi_face">屏幕中存在多张人脸</string>
+    <string name="ctid_no_pass_reason_skew_face">请正面面对屏幕</string>
+    <string name="ctid_no_pass_reason_too_bright">环境光线过亮</string>
+    <string name="ctid_no_pass_reason_too_dark">环境光线过暗</string>
+    <string name="ctid_no_pass_reason_too_far">请靠近摄像头</string>
+    <string name="ctid_no_pass_reason_blur">图像过于模糊</string>
+    <string name="ctid_no_pass_reason_yawangle">左右姿态角度过大</string>
+    <string name="ctid_no_pass_reason_picangle">俯仰角度过大</string>
+    <string name="ctid_no_pass_reason_mouthclosed">嘴巴张开过大</string>
+
+    <string name="ctid_env_pass">环境检测顺利完成...</string>
+    <string name="ctid_gazing">检测中请盯小喵头像</string>
+    <string name="ctid_face_in_box">请将脸置于提示框内</string>
+    <string name="ctid_memory_not_enough">内存不足！</string>
+    <string name="ctid_shake_head">请摇头</string>
+    <string name="ctid_dect_fail">检测失败，请重新检测...</string>
+    <string name="ctid_timerdialog_return">返      回</string>
+    <string name="ctid_timerdialog_recheck">重新检测</string>
+    <string name="ctid_str_look_left_right">请调整脸部位置，并按提示左看右看</string>
+
+    <string name="login_by_ali_text">为保证业务正常办理,请填写以下信息,并确保所填信息真实有效.</string>
+    <string name="cluser_introduce_method">
+        &#160;&#160;&#160;&#160;第一条  为充分调动广大人民群众维护社会治安的积极性，及时发现和打击各类违法犯罪行为，维护社会的长治久安，根据有关法律法规，结合我省公安工作实际，制定本办法。
+\n&#160;&#160;&#160;&#160;第二条  举报人通过吉林“互联网+公安”网上服务平台（以下简称“平台”）电脑端、吉林公安手机APP端上传文字材料、照片、视频方式提供案件线索，协助公安机关查破吉林省内的行政案件、破获刑事案件、抓获违法犯罪嫌疑人的，公安机关予以奖励。非使用平台提供案件线索的举报，不适用本办法。
+\n&#160;&#160;&#160;&#160;第三条  举报人可以选择实名举报或匿名举报方式向公安机关提供案件线索，对符合条件的实名举报人按本办法予以奖励；对匿名或使用虚假身份信息举报的，公安机关不予奖励。
+\n&#160;&#160;&#160;&#160;第四条  公安机关对举报人和举报线索奖励坚持以下原则：
+\n&#160;&#160;&#160;&#160;（一）不重复奖励原则。两人以上提供同一线索的，奖励最早的举报人；对举报时间在后，但提供线索质量更高的，应当奖励时间在后的举报人；对举报时间虽分先后，但线索各具不可替代价值的，应当视情分配奖金。
+\n&#160;&#160;&#160;&#160;（二）严格保密原则。公安机关在查证、宣传、奖励等环节，不得泄露举报人信息，未经举报人允许泄露其信息的，严肃追究相关人员责任。
+\n&#160;&#160;&#160;&#160;第五条  对提供案件线索的举报人，按照以下标准予以奖励：
+\n&#160;&#160;&#160;&#160;（一）查破行政案件，且违法行为人依法受到行政处罚的，奖励50元。满足下列条件之一的，奖励200元：
+1、对违法行为人处以行政拘留、责令停产停业、暂扣或者吊销许可证处罚的。
+2、对个人处以2000元以上罚款的。
+3、对法人或者其他组织处以10000元以上罚款的。
+    \n&#160;&#160;&#160;&#160;（二）破获刑事案件的，根据社会危害程度，奖励300至1000元；
+\n&#160;&#160;&#160;&#160;（三）抓获在逃犯罪嫌疑人的，每抓获1名A级逃犯奖励50000元；每抓获1名B级逃犯奖励10000元；抓获其他逃犯的，每抓获1人奖励500元。
+\n&#160;&#160;&#160;&#160;第六条  对于提供下列案件线索的举报人，按照特殊标准予以奖励：
+\n&#160;&#160;&#160;&#160;（一）火灾隐患线索
+1、经核查属实的一般火灾隐患线索，视情给予50元至200元奖励。
+2、经核查属实的重大火灾隐患线索，视情给予200元至500元奖励。
+\n&#160;&#160;&#160;&#160;（二）涉枪涉爆案件线索
+1、破获非法制造、买卖、运输、邮寄、储存枪支弹药、爆炸物品等重大案件的，视情给予2000至50000元奖励。
+2、打掉非法制贩枪支弹药、爆炸物品团伙，捣毁源头窝点的，视情给予5000元至50000元奖励。
+3、破获非法持有枪支弹药案件，收缴军用枪1支，民用枪（猎枪、口径枪、气枪）或者火药枪、仿制枪、自制枪、改制枪2支，仿真枪10支或者军用子弹10发、民用子弹100发以上的，视情给予500元至20000元奖励。
+4、破获私存爆炸物品案件，收缴炸药、发射药、黑火药1000克或者烟火药3000克，雷管30枚或者导火索、导爆索30米，炮弹、手榴弹、地雷1枚以上的，视情给予500元至20000元奖励。
+5、查禁、取缔非法制贩管制刀具、弩等管制物品和仿真枪窝点的，视情给予500元至10000元奖励。
+6、收缴剧毒化学品、易制爆化学品的，视情给予200元至10000元奖励。
+\n&#160;&#160;&#160;&#160;（三）涉暴恐案件线索
+1、为反恐怖工作提供有价值情况、信息等，视发挥作用程度给予1000元至5000元奖励。
+2、为防范或侦破暴力恐怖案（事）件，打击、抓捕暴恐分子发挥较大作用的，奖励10000元；发挥重大作用的，奖励30000元；发挥特别重大作用的，奖励50000元至300000元。
+\n&#160;&#160;&#160;&#160;（四）涉毒案件线索
+1、查获吸毒、毒驾或容留他人吸毒的，每处理1人奖励300元，其中依法被强制隔离戒毒的，奖励500元。
+2、查获制造、走私、贩卖、运输以及非法持有海洛因、冰毒、“摇头丸”、氯胺酮、鸦片、大麻、吗啡、可卡因、杜冷丁、咖啡因等毒品的，根据缴获数量给予奖励（缴获数量以海洛因为基准，其他毒品数量按比例折算）。缴获毒品50克以下的，每案奖励500元至3000元；50－1000克的，每案奖励3000元至20000元； 1000克以上的，每案奖励20000元至50000元。
+3、查获走私、非法买卖、生产、运输国家规定管制的易制毒化学品的，根据缴获量给予奖励。缴获1-苯基-2-丙酮、3,4-亚甲基二氧苯基-2-丙酮、胡椒醛等第一类管制品的，每案奖励2000元至20000元；缴获苯乙酸、醋酸酐、三氯甲烷等第二类管制品的，每案奖励1000元至20000元；缴获甲苯、丙酮、甲基乙基酮等第三类管制品的，每案奖励500元至10000元。
+4、查获非法种植毒品原植物的，根据铲除毒品原植物数量给予奖励。罂粟铲除量在500株以下或者大麻5000株以下的，每案奖励500元至1000元；罂粟铲除量在500株以上或大麻5000株以上的，每案奖励1000元至5000元。
+5、查获非法贩卖罂粟壳的，根据缴获罂粟壳数量进行奖励。缴获量不满50千克的，每案奖励1000元至2000元；缴获量在50千克以上的，每案奖励2000元至10000元。
+\n&#160;&#160;&#160;&#160;（五）交通肇事逃逸案件线索
+提供肇事车号、车主、肇事司机姓名等有价值线索，抓获交通肇事逃逸者，成功侦破逃逸案件的，根据交通事故等级划分标准给予奖励。
+1、破获轻微交通肇事逃逸案件的（指一次造成轻伤1至2人，或者机动车事故财产损失不足1000元，非机动车事故不足200元），给予500元奖励；
+2、破获一般交通肇事逃逸案件的（指一次造成重伤1至2人，或者轻伤3人以上，或者财产损失不足3万元），给予1000元奖励；
+3、破获重大交通肇事逃逸案件的（指一次造成死亡1至2人，或者重伤3人以上10人以下，或者财产损失3万元以上不足6万元），给予2000元奖励；
+4、破获特大交通肇事逃逸案件（指一次造成死亡3人以上，或者重伤11人以上，或者死亡1人，同时重伤8人以上，或者死亡2人，同时重伤5人以上，或者财产损失6万元以上）或造成重大社会影响的逃逸案件的，给予5000元至10000元奖励。
+\n&#160;&#160;&#160;&#160;（六）侵犯知识产权和制售假冒伪劣商品犯罪案件线索
+根据案件侦查认定犯罪金额的1%进行奖励，最高不超过100000元。
+\n&#160;&#160;&#160;&#160;第七条  有以下情形之一的，不予奖励：
+\n&#160;&#160;&#160;&#160;（一）公安机关已经掌握的线索；
+\n&#160;&#160;&#160;&#160;（二）案件举报人因同一案件线索已获得奖励的；
+    \n&#160;&#160;&#160;&#160;（三）违法犯罪嫌疑人供述或者逃犯自首、主动归案的线索；
+    \n&#160;&#160;&#160;&#160;（四）国家机关工作人员在履行职务过程中知悉的违法犯罪线索；
+\n&#160;&#160;&#160;&#160;（五）案件控告人、被害人、被侵害人或者其家属提供的；
+\n&#160;&#160;&#160;&#160;（六）非公安机关管辖的案件线索；
+\n&#160;&#160;&#160;&#160;（七）其他不符合奖励情形的。
+\n&#160;&#160;&#160;&#160;第八条  举报人弄虚作假套取奖金或诬告陷害的，将依法追究法律责任；公安机关及其民警违反规定或协助他人套取奖金的，将依法依纪严肃处理。
+\n&#160;&#160;&#160;&#160;第九条  举报人应当自接到领奖通知之日起20日内提交核实身份及奖金发放的相关信息，逾期未提供的，视为自愿放弃。
+\n&#160;&#160;&#160;&#160;第十条  本办法由吉林省公安厅负责解释，自2017年1月1日起施行。
+    </string>
+    <string name="submit_success_tip">
+        &#160;&#160;&#160;&#160;请牢记该案件举报编号并截屏（拍照留存），此编号（图片）作为案件查询和举报人领取奖励的重要依据。
+    </string>
+    <string name="submit_success_thanks">感谢您通过"互联网+公安"综合服务平台提供线索</string>
+</resources>

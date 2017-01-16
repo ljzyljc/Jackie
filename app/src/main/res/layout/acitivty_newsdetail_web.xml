@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fafafa"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollbars="none"
+        />
+    <!--android:scrollbarSize="3dp"-->
+    <!--android:scrollbarStyle="insideInset"-->
+    <!--android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"-->
+</LinearLayout>

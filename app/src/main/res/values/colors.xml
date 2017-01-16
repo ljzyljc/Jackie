@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_content_bg">#10000000</color>
+
+    <color name="main_line_color">#DEE1E3</color>
+    <color name="base_color1">#FF2BA4E6</color>
+    <color name="base_zhuantai">#2A99DB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ff0000</color>
+
+    <color name="mybule">#005BAC</color>
+    <color name="myblue_dark">#36648B</color>
+
+    <color name="tabbar_bottom_bg">#11000000</color>
+    <color name="app_text_orange_color">#FF8200</color>
+    <color name="app_text_orange_deep_color">#E07604</color>
+    <color name="tabbar_text_press_color">@color/app_text_orange_color</color>
+    <color name="tabbar_text_normal_color">#585858</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00FFFFFF</color>
+    <!-- 半透明色 -->
+    <color name="half_transparent">#80000000</color>
+    <color name="light_black">#808080</color>
+    <color name="gray">#FFB4B4B4</color>
+    <color name="pop_normal_bg">#E7E7E7</color>
+    <color name="pop_select_bg">#DFDfDf</color>
+    <color name="light_gray">#80CCCCCC</color>
+    <color name="c_gray">#CCCCCC</color>
+    <color name="color_b">#ff0e0e0e</color>
+    <color name="color_d">#ff808080</color>
+    <color name="color_a">#ffffffff</color>
+    <color name="item_title">#4E4E4E</color>
+    <color name="second_color">#33B5E5</color>
+    <color name="dark_blue">#B00000FF</color>
+    <color name="app_icon_presses">#FF61CC38</color>
+    <color name="light_green">#8000FF00</color>
+    <color name="title_bar_bg_color">@color/base_color1</color>
+    <color name="green">#FF00FF00</color>
+    <color name="green1">#FF60A917</color>
+    <color name="deep_green">#317512</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="push_msg_item">#FF666666</color>
+    <color name="push_msg_bg_p">#FF71DAF5</color>
+    <!-- 全局颜色 -->
+    <color name="app_item_bg_n">#602BA4E6</color>
+    <color name="app_item_bg_p">#FF61CC38</color>
+    <color name="mm_title_bar_btn_p">#FF1787C4</color>
+    <color name="base_color2">#FF1A9ADF</color>
+    <color name="base_color3">#00839A</color>
+    <color name="btn_p">#FFFF6822</color>
+    <color name="btn_n">#FFF53646</color>
+    <color name="news_detail_bg">#FFEEEEEE</color>
+    <color name="news_detail_title">#FF6D6D6D</color>
+    <color name="btn_choice">#6C9F0E</color>
+    <color name="btn_unchoice">#58810B</color>
+    <color name="choice">#4DC0FF</color>
+    <color name="unchoice">#2BA4E6</color>
+    <color name="chat_detail_left_txt">#999999</color>
+    <color name="half_black">#80000000</color>
+    <color name="dark_gray">#FF666666</color>
+    <color name="detail_content_color">#FF3c3333</color>
+    <color name="golden">#ff58D44B</color>
+    <color name="confirm_num_choice">#5D9CD2</color>
+    <color name="confirm_num_unchoice">#81B8E7</color>
+    <color name="text_color">#999999</color>
+    <color name="purple">#8955a8</color>
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+
+    <color name="light_blue">#800000FF</color>
+    <color name="cyan">#FF746288</color>
+    <color name="orange">#FFFF6600</color>
+    <color name="app_store_add">#FF61d178</color>
+    <color name="app_store_add_click">#FF57bc6c</color>
+    <color name="app_store_install">#FF2bacf8</color>
+    <color name="app_store_install_click">#FF279adf</color>
+    <color name="app_store_remove">#FFfc7c26</color>
+    <color name="app_store_remove_click">#FFe26f22</color>
+    <color name="common_item_txt">#FF373737</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="default_text">#ff454545</color>
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="calendar_button_bg">#F5F5F5</color>
+    <color name="calendar_button_press">#29799C</color>
+    <color name="webview_theme_normal">#fafafa</color>
+    <color name="webview_theme_night">#151515</color>
+    <color name="textview_hint">#ABB8CA</color>
+    <color name="home_wz_normal">#3657b4</color>
+    <color name="home_wz_press">#2e4a99</color>
+    <color name="home_search_normal">#2f9c49</color>
+    <color name="home_search_press">#28853e</color>
+    <color name="home_jwzx_normal">#ffa853</color>
+    <color name="home_jwzx_press">#d98f47</color>
+    <color name="home_lkbb_normal">#ee6b4d</color>
+    <color name="home_lkbb_press">#cb5b42</color>
+    <color name="home_message_normal">#00c5c3</color>
+    <color name="home_message_press">#00a8a6</color>
+    <color name="home_weather_normal">#0090ec</color>
+    <color name="home_weather_press">#007bc9</color>
+    <color name="motor_query_press">#4fbac0</color>
+    <color name="motor_query_normal">#58cbd2</color>
+    <color name="driver_query_press">#77bed6</color>
+    <color name="driver_query_normal">#85d4ee</color>
+    <color name="car_manager_press">#d5d5d5</color>
+    <color name="car_manager_normal">#8facd2</color>
+    <color name="btn_login_normal">#Fdc437</color>
+    <color name="btn_login_press">#Feb22A</color>
+    <color name="btn_register_normal">#F99a49</color>
+    <color name="btn_register_press">#Fb8338</color>
+    <!-- 全局水平进度条 进度颜色 -->
+    <color name="progressbar_horizontal_progresscolor">#FECA54</color>
+    <color name="callout_title">#87d0fe</color>
+    <color name="dialog_bg_color">#88000000</color>
+
+    <color name="graylight">#A8A8A8</color>
+
+    <!-- 二维码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="ctid_main_bg">#d5d5d5</color>
+    <color name="ctid_white">#FFFFFF</color>
+    <color name="ctid_black">#000000</color>
+    <color name="ctid_orange">#FF7F00</color>
+
+    <color name="ctid_blue">#0000FF</color>
+    <color name="ctid_red">#FFFF3333</color>
+    <color name="ctid_green">#FF33FF33</color>
+    <color name="ctid_txt_blue">#FF3333FF</color>
+    <color name="ctid_bg_green">#009900</color>
+    <color name="ctid_bg_blue">#48a1dd</color>
+    <color name="ctid_bg_bluelight">#4fc3f7</color>
+</resources>

@@ -1,0 +1,59 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="navigation_height">45dp</dimen>
+    <dimen name="desktop_app_grid_padding">2dip</dimen>
+    <dimen name="grid_item_width">90dip</dimen>
+    <dimen name="grid_item_height">100dip</dimen>
+    <dimen name="desktop_app_grid_item_horizontal_spacing">1dip</dimen>
+    <dimen name="desktop_app_grid_item_vertical_spacing">1dip</dimen>
+    <dimen name="bottom_tab_font_size">12.0sp</dimen>
+    <dimen name="grid_item_update_flag_width">20dip</dimen>
+    <dimen name="grid_item_update_flag_height">20dip</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="list_item_height">55dip</dimen>
+    <dimen name="setting_item_label_margin_left">15dip</dimen>
+    <dimen name="grid_item_spacing_vertical">10dip</dimen>
+    <dimen name="app_layout_padding">10dip</dimen>
+    <dimen name="app_layout_padding_top_bottom">10.0dip</dimen>
+    <dimen name="news_item_pic_height">120dip</dimen>
+    <dimen name="news_item_pic_width">100dip</dimen>
+    <dimen name="topic_pic_news_height">160dip</dimen>
+    <dimen name="push_msg_app_padding">8dip</dimen>
+    <dimen name="grid_item_spacing_horizontal">12dip</dimen>
+    <dimen name="list_footer_height">25dip</dimen>
+    <dimen name="btn_height">43dip</dimen>
+    <dimen name="login_form_item_width">220dip</dimen>
+    <dimen name="chat_detail_left">15sp</dimen>
+    <dimen name="chat_detail_right">15sp</dimen>
+    <dimen name="pop_button_marginright">16dp</dimen>
+    <dimen name="matter_declare_bar_height">48dp</dimen>
+    <dimen name="matter_declare_txt_marginleft">8dp</dimen>
+    <dimen name="violation_weather_value">16sp</dimen>
+    <dimen name="index_shortcut_size">100dip</dimen>
+    <dimen name="index_shortcut_margin">3dip</dimen>
+    <dimen name="queryresult_item">14sp</dimen>
+    <dimen name="gas_prices_list">16sp</dimen>
+    <dimen name="sixteen_sp">14sp</dimen>
+    <dimen name="tab_bottom_height">55dp</dimen>
+    <dimen name="cornerdp">5dp</dimen>
+
+    <!--圆角tab之间的间隔-->
+    <dimen name="roundcornertab_divider_width">1.5dp</dimen>
+
+    <!--标题类文字大小-->
+    <dimen name="title_textSize">16sp</dimen>
+    <dimen name="content_textSize">14sp</dimen>
+    <dimen name="small_textSize">14sp</dimen>
+
+
+    <!-- 视频录制的最长时间  毫秒数  10分钟 -->
+    <integer name="record_duration_ms">600000</integer>
+
+    <!-- 视频录制的最大值  50M -->
+    <integer name="record_max_bytes">30000000</integer>
+</resources>

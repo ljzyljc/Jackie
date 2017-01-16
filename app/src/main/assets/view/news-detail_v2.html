@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<title>掌上公安</title>
+<style type="text/css">
+    body, div, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, iframe, input, textarea,
+    select, label, article, aside, footer, header,
+    menu, nav, section, time, audio, video {
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: transparent;
+    }
+
+    .no-border {
+    border: none;
+    outline: transparent none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    #global {
+    background-color: transparent;
+    min-width: 320px;
+    color: #393939;
+    }
+
+    .big {
+    font-size: 1.135em;
+    line-height: 1.45em;
+    }
+
+    .big .title {
+    font-size: 1.32em;
+    line-height: 1.5;
+    }
+
+    .big .meta {
+    font-size: 1.01em;
+    padding-bottom: 0.4em;
+    }
+
+    .big .content p {
+    font-size: 1.18em;
+    line-height: 1.5em;
+    }
+
+    .big .content h2 {
+    margin: 0.5em 1em;
+    font-size: 1.3em;
+    line-height: 1.45em;
+    }
+
+    .small {
+    font-size: 1.05em;
+    line-height: 1.55em;
+    }
+
+    .small .title {
+    font-size: 1.125em;
+    line-height: 1.3;
+    }
+
+    .small .meta {
+    font-size: 0.93em;
+    padding-bottom: 0.3em;
+    }
+
+    .small .content p {
+    font-size: 1.10em;
+    line-height: 1.55em;
+    }
+
+    .small .content h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 1em;
+    font-size: 1.25em;
+    line-height: 1.31em;
+    }
+
+    #title {
+    padding: 20px 0 15px;
+    font-weight: 700;
+    margin: 0 8px;
+    text-align: -webkit-center;
+    }
+
+    #meta {
+    margin: 0 8px;
+    overflow: hidden;
+    position: relative;
+    height: 1.3em;
+    border-bottom: 1px solid #eceef0;
+    color: rgba(117, 104, 104, 0.74);
+    }
+
+    #meta.night {
+    border-bottom: 1px solid #737577;
+    }
+
+    #time {
+    display: inline-block;
+
+    overflow: hidden;
+    float: left;
+    font-family: Helvetica serif;
+    white-space: nowrap;
+    }
+
+    #author {
+    margin-left: 10px;
+    }
+
+    #contentbar {
+    position: absolute;
+    right: 10px;
+    }
+
+    #fontsize {
+    margin-left: 10px;
+    }
+
+    #content {
+    /*min-width: 320px;
+    min-height: 300px;
+    padding: 12px 0;*/
+    }
+
+    #content p {
+    /* padding: 0 9px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+    text-indent: 1.5em;
+    text-align: justify;*/
+    }
+
+    #content img {
+    /* width: 100%;
+    min-height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -1.5em;
+    border: none;
+    outline: transparent none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+    }
+
+    #loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(53, 47, 47, 0.52);
+    }
+
+    #loading div {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1.0em;
+    margin: auto;
+    line-height: 100px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(49, 31, 31, 0.66);
+    }
+
+    #error {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(245, 234, 234, 1);
+    }
+
+    #error div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    color: #686161;
+    font-size: 1.0em;
+    font-weight: 600;
+    }
+</style>
+</head>
+<body>
+<div id="global">
+    <h1 id="title" class="title"></h1>
+
+    <div id="meta" class="meta">
+        <span id="time"></span>
+        <span id="author"></span>
+        <span id="contentbar">
+            <a id="theme" class="no-border"></a>
+            <a id="fontsize" class="no-border">大字</a>
+        </span>
+    </div>
+    <div id="content" class="content"></div>
+</div>
+<div id="error">
+    <div>数据加载失败</div>
+</div>
+<div id="loading">
+    <div>正在加载...</div>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        //字体大小设置
+        $('#fontsize').data("size", "small").click(function () {
+            if ("small" == $(this).data("size")) {
+                $(this).data("size", "big").text("小字");
+                $("#global").removeClass("small").addClass("big");
+                try {
+                    window.pap.setTextSize("big");
+                } catch (ex) {
+                }
+            } else {
+                $(this).data("size", "small").text("大字");
+                $("#global").removeClass("big").addClass("small");
+                try {
+                    window.pap.setTextSize("small");
+                } catch (ex) {
+                	console.log(ex);
+                }
+            }
+        });
+        //loadPage("http://221.224.13.5:8190/econsole/api/news/203", "small", 1);
+              // loadPage("http://172.17.118.86:8080/econsole/api/news/601", "small", 1);
+       //loadPage("http://192.168.1.132:8080/econsole/api/news/615", "small", 1);
+       //loadPage("http://192.168.1.132:8080/econsole/api/news/613", "small", 1);
+             // loadPage("http://192.168.1.132:8080/econsole/api/news/611", "small", 1);
+             //loadPage("http://192.168.1.132:8080/econsole/api/news/617", "small", 1);
+
+
+    });
+    function initPage(textSize) {
+        //初始化字体大小
+        if (textSize && textSize == $('#fontsize').data('size')) { //big
+            $('#fontsize').data('size', 'small').text('大字');
+            $('#global').removeClass('big').addClass('small');
+        } else {
+            $('#fontsize').data('size', 'big').text('小字');
+            $('#global').removeClass('small').addClass('big');
+        }
+    }
+    /**
+     * 加载页面
+     * @param url 新闻加载地址
+     * @param size 页面字体大小
+     * @param showImg 默认加载是否显示图片 0不显示 1：显示
+     */
+    function loadPage(url, size, showImg) {
+        initPage(size);
+        $.ajax({
+            url: url,
+            timeout: 6000,
+            beforeSend: function () {
+                $("#loading").show();
+                $("#error").hide();
+            },
+            success: function (resp) {
+                if (resp && resp.succ) {
+                    document.getElementById("title").innerHTML = resp.data.title;
+					var _date = new Date(resp.data.pubTime);
+					document.getElementById("time").innerHTML = resp.data.pubStr;
+//                    document.getElementById("author").innerHTML = resp.data.author;
+                    if (showImg && 'Y' == showImg) {
+                        $("#content").html(resp.data.content).find("img").each(function (index, obj) {
+                            $(obj).attr("src", $(this).attr("data-src"));
+                        });
+                    } else {
+                        $("#content").html(resp.data.content).find("img").bind("click", function () {
+                            $(this).attr("src", $(this).attr("data-src"));
+                        });
+                    }
+                    $("#loading").hide();
+                } else {
+                    $("#error").show();
+                    $("#loading").hide();
+                }
+            },
+            error: function () {
+                $("#error").show();
+                $("#loading").hide();
+            }
+        });
+    }
+
+
+
+
+
+
+
+</script>
+</html>
