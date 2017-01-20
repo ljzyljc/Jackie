@@ -1,5 +1,6 @@
 package com.oceansoft.osga.moudle.consult.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -114,7 +115,7 @@ public class ConsultMatter {
          * IsChecked : null
          */
 
-        private List<ListBean> list;
+        private ArrayList<ListBean> list;
 
         public int getTotalPages() {
             return totalPages;
@@ -132,11 +133,11 @@ public class ConsultMatter {
             this.totals = totals;
         }
 
-        public List<ListBean> getList() {
+        public ArrayList<ListBean> getList() {
             return list;
         }
 
-        public void setList(List<ListBean> list) {
+        public void setList(ArrayList<ListBean> list) {
             this.list = list;
         }
 

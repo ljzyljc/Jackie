@@ -5,10 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.oceansoft.osga.R;
 import com.oceansoft.osga.moudle.consult.bean.ConsultMatter;
 import com.oceansoft.osga.utils.ToastUtil;
@@ -20,31 +20,35 @@ import java.util.List;
  * 咨询中心界面 adapter
  */
 
-public class ConsultAdapter extends RecyclerView.Adapter<ConsultAdapter.ViewHolder>{
+public class ConsultAdapter extends BaseRecyclerAdapter<ConsultAdapter.ViewHolder> {
 
     private List<ConsultMatter.DataBean.ListBean> mList;
     private Context context;
-    private OnItemClickListener mListener;
 
     public ConsultAdapter(List<ConsultMatter.DataBean.ListBean> mList, Context context) {
         this.mList = mList;
         this.context = context;
     }
 
-    public void setmListener(OnItemClickListener mListener) {
-        this.mListener = mListener;
-    }
+
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.consult_adapter_item,parent,false);
-
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType,boolean isItem) {
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_consult_adapter,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public ViewHolder getViewHolder(View view) {
+        return new ViewHolder(view);
+    }
+
+
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position,boolean isItem) {
         holder.txt_question_content.setText(mList.get(position).getContext());
+//        Log.i("jc",mList.get(position).getContext()+"0000");
         holder.view_question.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,8 +58,8 @@ public class ConsultAdapter extends RecyclerView.Adapter<ConsultAdapter.ViewHold
     }
 
     @Override
-    public int getItemCount() {
-        return 0;
+    public int getAdapterItemCount() {
+        return mList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

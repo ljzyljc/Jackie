@@ -13,14 +13,20 @@ import com.oceansoft.osga.moudle.home.view.IHomeView;
  */
 
 public class HomePresenter extends BasePresenter<HomeModel,IHomeView> {
-    private HomeModel homeModel;
+//    private HomeModel homeModel;
 
     public HomePresenter(Context context) {
         super(context);
-        homeModel=new HomeModel(context);
+//        homeModel=new HomeModel(context);
     }
+
+    @Override
+    public HomeModel bindModel() {
+        return new HomeModel(getContext());
+    }
+
     public void getViewPagerInfo(){
-        homeModel.getViewPagerInfo(new HomeModel.OnViewPagerListener() {
+        getModel().getViewPagerInfo(new HomeModel.OnViewPagerListener() {
             @Override
             public void onViewPagerSuccess(NewsBean newsBean) {
                 getView().onLoadViewPagerSuccess(newsBean);
@@ -34,7 +40,7 @@ public class HomePresenter extends BasePresenter<HomeModel,IHomeView> {
 
     }
     public void getGridViewInfo(){
-        homeModel.getGridViewInfo(new HomeModel.OnGridViewResultListener() {
+        getModel().getGridViewInfo(new HomeModel.OnGridViewResultListener() {
             @Override
             public void onGridViewSuccess(GridItem gridItem) {
                 getView().onLoadGridViewSuccess(gridItem);
@@ -48,5 +54,8 @@ public class HomePresenter extends BasePresenter<HomeModel,IHomeView> {
 
     }
 
-
+    @Override
+    public void Onunsubscribe() {
+        getModel().unsubscribe();
+    }
 }

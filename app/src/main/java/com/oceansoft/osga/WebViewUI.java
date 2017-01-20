@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.net.http.SslError;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -22,8 +23,10 @@ import android.widget.Toast;
 
 
 import com.oceansoft.osga.config.SharePreferenceManager;
-import com.oceansoft.osga.moudle.base.view.views.AbsBaseActivity;
-import com.oceansoft.osga.mvp.view.impl.AbsMvpActivity;
+
+import com.oceansoft.osga.mvp.view.AbsActionBarActivity;
+import com.oceansoft.osga.mvp.view.BaseActivity;
+import com.oceansoft.osga.mvp.view.BaseFragment;
 import com.oceansoft.osga.mvp.view.impl.AbsMvpMapActivity;
 import com.oceansoft.osga.utils.DialogUtil;
 import com.oceansoft.osga.utils.NetWorkUtil;
@@ -41,7 +44,7 @@ import java.util.Timer;
  * @author: dlm
  * @time: 14-7-3 上午10:16
  */
-public class WebViewUI extends AbsMvpMapActivity {
+public class WebViewUI extends AbsActionBarActivity {
 
     private static final int TIME_OUT_FLAG = 1;
     public static final int POST = 0x101;
@@ -56,6 +59,7 @@ public class WebViewUI extends AbsMvpMapActivity {
     private String PostParams = "";
     private ValueCallback<Uri> mUploadMessage;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,16 +71,14 @@ public class WebViewUI extends AbsMvpMapActivity {
         PostParams = getIntent().getStringExtra("postParams");
         setContentView(R.layout.acitivty_newsdetail_web);
         //FIXME:待解决问题：点击深层的webView则报错(解决办法：用Fragment(未测试))
-        bindNavagation(R.id.lt,R.string.matter,WebViewUI.this);
+//        bindNavagation(R.id.lt,R.string.matter,WebViewUI.this);
+        setTitle("事项中心");
 
 
         setupView();
     }
 
-    @Override
-    public void bindPresenter() {
 
-    }
 
     private void setupView() {
         webView = (WebView) findViewById(R.id.news_detail);

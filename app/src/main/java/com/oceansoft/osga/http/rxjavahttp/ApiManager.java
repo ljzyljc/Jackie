@@ -33,7 +33,8 @@ public class ApiManager {
     private File httpCacheDirectory = new File(BaseApplication.getInstance().getCacheDir(), "httpcache");
     private int CacheSize=10*1024*1024;
     private Cache cache=new Cache(httpCacheDirectory,CacheSize);
-    public OkHttpClient getOkhttpClient() {
+    //https请求
+    public OkHttpClient getOkhttpsClient() {
             try {
                 KeyStore trustStore = KeyStore.getInstance(KeyStore
                         .getDefaultType());
@@ -62,16 +63,11 @@ public class ApiManager {
                 javax.net.ssl.SSLSocketFactory sslSocketFactory=sslContext.getSocketFactory();
 
 
-
-//                TrustManagerFactory trustManagerFactory=
-//                        TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
-//                trustManagerFactory.init(trustStore);
-
               OkHttpClient  client = new OkHttpClient.Builder()
                         .addNetworkInterceptor(REWRITE_CACHE_CONTROL_INTERCEPTOR)
                         .addInterceptor(REWRITE_CACHE_CONTROL_INTERCEPTOR)
                         .cache(cache)
-                        .sslSocketFactory(sslSocketFactory)
+                        .sslSocketFactory(sslSocketFactory)       //支持Https
                         .build();
 
                 return client;
@@ -82,7 +78,15 @@ public class ApiManager {
 
         return null;
     }
-
+    //Http请求
+    public OkHttpClient getOkhttpClient(){
+        OkHttpClient  client = new OkHttpClient.Builder()
+                .addNetworkInterceptor(REWRITE_CACHE_CONTROL_INTERCEPTOR)
+                .addInterceptor(REWRITE_CACHE_CONTROL_INTERCEPTOR)
+                .cache(cache)
+                .build();
+        return client;
+    }
 
 //
 //    private  OkHttpClient client=new OkHttpClient.Builder()
@@ -126,6 +130,7 @@ public class ApiManager {
         }
         return apiManager;
     }
+    //Https
     public MainApi getMainService(){
         if (mainApi==null){
             synchronized (object){
@@ -133,12 +138,32 @@ public class ApiManager {
                     mainApi=new Retrofit.Builder()
                             .baseUrl(Config.HOST)
                             .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                            .client(getOkhttpClient())
+                            .client(getOkhttpsClient())
                             .addConverterFactory(GsonConverterFactory.create())
                             .build()
                             .create(MainApi.class);
                 }
             }
+        }
+        return mainApi;
+    }
+    //http
+    public MainApi getHttpMainService(){
+        if (mainApi==null){
+            synchronized (object){
+                if (mainApi==null){
+                    mainApi=new Retrofit.Builder()
+                            .baseUrl(Config.HOSTHttp)
+                            .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                            .client(getOkhttpClient())
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .build()
+                            .create(MainApi.class);
+                }
+
+
+            }
+
         }
         return mainApi;
     }

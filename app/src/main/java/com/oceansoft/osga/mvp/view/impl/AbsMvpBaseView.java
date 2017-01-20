@@ -8,4 +8,5 @@ import com.oceansoft.osga.mvp.view.IMvpView;
  */
 
 public abstract class AbsMvpBaseView implements IMvpView {
+
 }

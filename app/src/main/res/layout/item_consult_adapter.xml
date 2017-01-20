@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_youke" />
+
+        <RelativeLayout
+            android:id="@+id/ask_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/flag"
+            android:background="@drawable/bubble_ask">
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/txt_question_content"
+                style="@style/content_text_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_title"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/hasResoult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_question_content"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:textColor="@color/btn_login_press"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/hasComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_question_content"
+                android:layout_toRightOf="@+id/hasResoult"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:textColor="@color/app_store_add"
+                android:layout_marginLeft="24dp"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txt_question_time"
+                style="@style/time_text_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_question_content"
+                android:gravity="top"
+                android:paddingRight="5dp"
+                android:text="2011/01/31" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/commit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ask_info"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请评价"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/satisfied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="满意"
+                android:textColor="@color/text_color"
+                android:textSize="10sp"/>
+
+            <RadioButton
+                android:id="@+id/commonly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="基本满意"
+                android:textColor="@color/text_color"
+                android:textSize="10sp"/>
+
+            <RadioButton
+                android:id="@+id/unsatisfied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="不满意"
+                android:textColor="@color/text_color"
+                android:textSize="10sp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/commit_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/common_btn_bg1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="确定"
+                android:textSize="11sp"
+                android:textColor="@color/white" />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/view_queeestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/flagww"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_youke" />
+
+        <RelativeLayout
+            android:id="@+id/ask_inddfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/flagww"
+            android:background="@drawable/bubble_ask">
+
+            <TextView
+                android:id="@+id/txt_disagree_content"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt_qudedstion_content"
+                style="@style/content_text_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_disagree_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dip"
+            android:indeterminateDrawable="@drawable/progress_bar_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pb_loading"
+            android:text="@string/loading"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/answer_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_admin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/answer_flag"
+            android:background="@drawable/bubble_answer">
+
+            <TextView
+                android:id="@+id/txt_answer_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_answer_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_answer_content"
+                android:paddingRight="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/txt_no_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="暂无回复"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

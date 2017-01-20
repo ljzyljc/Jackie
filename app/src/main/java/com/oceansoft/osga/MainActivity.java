@@ -1,15 +1,24 @@
 package com.oceansoft.osga;
 
 
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.FragmentTabHost;
+import android.util.Log;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 
+import com.oceansoft.osga.config.BaseApplication;
 import com.oceansoft.osga.moudle.consult.view.ConsultFragment;
+import com.oceansoft.osga.moudle.download.DownloadService;
 import com.oceansoft.osga.moudle.home.view.HomeFragment;
 import com.oceansoft.osga.moudle.matters.view.MattersFragment;
-import com.oceansoft.osga.moudle.usercenter.view.views.UserFragment;
+import com.oceansoft.osga.moudle.usercenter.total.view.views.UserFragment;
+import com.oceansoft.osga.mvp.view.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,17 +26,43 @@ import java.util.List;
 public class MainActivity extends BaseActivity implements TabHost.OnTabChangeListener {
     private List<TabItem> tabItems;
     private FragmentTabHost fragmentTabHost;
-
-
+//    private String url="http://gaapi.jl.gov.cn:80/econsole/upload/app/ea46e738fddca12282db7c51f36448f1.apk";
+//
+//    private DownloadService.DownloadBinder downloadBinder;
+//    private ServiceConnection connection=new ServiceConnection() {
+//        @Override
+//        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+//            downloadBinder= (DownloadService.DownloadBinder) iBinder;
+//        }
+//
+//        @Override
+//        public void onServiceDisconnected(ComponentName componentName) {
+//
+//        }
+//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        Intent intent=new Intent(this,DownloadService.class);
+//        startService(intent);
+//        bindService(intent,connection,BIND_AUTO_CREATE);
+//        Toast.makeText(this,"启动服务",Toast.LENGTH_SHORT).show();
+////        downloadBinder.startDownLoad(url);
+
+
         //初始化tab页基本信息
         initTabItemList();
         //绑定
         initTabView();
+        ((BaseApplication)getApplication()).checkUpgrade(true,true);
+//        if (downloadBinder==null){
+//            Log.i("jc","downLoad为空");
+//        }else{
+//            downloadBinder.startDownLoad(url);
+//        }
+
 
     }
 
@@ -85,5 +120,11 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
                 tabItem.setChecked(false);
             }
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+//        unbindService(connection);
     }
 }

@@ -12,7 +12,9 @@ import com.oceansoft.osga.R;
 
 
 /**
- * Created by TempCw on 2017/1/10.
+ * Created by Jackie on 2017/1/10.
+ * Builder设计模式实现导航栏功能
+ * 可设置左右边图片，文字
  */
 
 public class DefaultNavigation extends AbsNavigation<DefaultNavigation.Builder.DefaultNavigationParams> {

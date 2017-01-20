@@ -72,7 +72,10 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme">
         <activity android:name="com.oceansoft.osga.MainActivity"
-                  android:theme="@style/Base.Theme.Translation">
+                  android:theme="@style/Base.Theme.Translation"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+            >
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -81,12 +84,24 @@
             </intent-filter>
         </activity>
        <activity android:name="com.oceansoft.osga.moudle.usercenter.login.view.LoginActivity"
-           android:theme="@style/Base.Theme"/>
-        <activity android:name="com.oceansoft.osga.BaseActivity"/>
-        <activity android:name=".WebViewUI"/>
+          />
+        <activity android:name="com.oceansoft.osga.mvp.view.BaseActivity"/>
+        <activity android:name=".WebViewUI"
+                  android:theme="@style/Base.Theme.WebViewTheme"
+            >
+            </activity>
         <activity android:name=".moudle.usercenter.register.view.RegisterUI"/>
         <activity android:name=".moudle.home.view.NewsWebUI"/>
         <activity android:name=".moudle.home.view.NewsDetailUI"/>
+        <activity android:name=".moudle.download.UpgradeDialog"
+                  android:launchMode="singleTask"
+                  android:theme="@style/ThemeDialog"/>
+
+
+        <service android:name=".moudle.download.DownloadService"
+                 android:enabled="true"
+                 android:exported="true"/>
+        <service android:name=".moudle.download.CheckForUpdateService"/>
     </application>
 
 </manifest>

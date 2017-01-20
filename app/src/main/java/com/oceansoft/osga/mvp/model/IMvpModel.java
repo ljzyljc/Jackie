@@ -5,5 +5,5 @@ package com.oceansoft.osga.mvp.model;
  */
 
 public interface IMvpModel {
-    void unsubscribe();
+//    void unsubscribe();   //移到具体项目的pro-->base中
 }

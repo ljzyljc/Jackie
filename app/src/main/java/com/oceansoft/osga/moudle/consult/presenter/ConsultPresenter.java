@@ -18,8 +18,8 @@ public class ConsultPresenter extends BasePresenter<ConsultModel,IConsultView> {
         super(context);
         consultModel=new ConsultModel(getContext());
     }
-    public void getConsultList(){
-        consultModel.getMatterList(new ConsultModel.OnLoadLister() {
+    public void getConsultList(int pageNum){
+        consultModel.getMatterList(pageNum,new ConsultModel.OnLoadLister() {
             @Override
             public void onSuccess(ConsultMatter consultMatter) {
                 getView().load(consultMatter);
@@ -35,4 +35,8 @@ public class ConsultPresenter extends BasePresenter<ConsultModel,IConsultView> {
 
     }
 
+    @Override
+    public void Onunsubscribe() {
+        getModel().unsubscribe();
+    }
 }

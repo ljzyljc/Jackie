@@ -8,41 +8,22 @@ import com.oceansoft.osga.mvp.view.IMvpView;
 
 
 /**
- * Created by TempCw on 2017/1/10.
+ * Created by Jackie on 2017/1/10.
+ * BasePresenter绑定View和Model
  */
 
-public abstract class BasePresenter<M extends AbsBaseModel,V extends IMvpView> extends AbsMvpPresenter<V> {
-    private Context context;
+public abstract class BasePresenter<M extends AbsBaseModel,V extends IMvpView> extends AbsMvpPresenter<M,V> {
 
-    private M baseModel;
 
-    public M bindModel(){
-        return baseModel;
+    public BasePresenter(Context context) {
+        super(context);
     }
-
-    public M getModel() {
-        if (this.baseModel==null){
-            this.baseModel=bindModel();
-        }
-
-        return baseModel;
-    }
-
-    public BasePresenter(Context context){
-        this.context=context;
-
-    }
-
-    public Context getContext() {
-        return context;
-    }
-
     public interface OnUIThreadListener<T>{
         public void onResult(T result,String errorMessage);
     }
 
-    @Override
-    public void onUnsubsrible() {
+    public void Onunsubscribe() {   //RxJava+retrofit取消订阅
 
     }
+
 }

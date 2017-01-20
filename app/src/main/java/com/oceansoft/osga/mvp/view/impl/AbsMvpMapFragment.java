@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.oceansoft.osga.mvp.presenter.impl.AbsMvpPresenter;
+import com.oceansoft.osga.mvp.view.BaseFragment;
 import com.oceansoft.osga.mvp.view.IMvpView;
 import com.oceansoft.osga.utils.StatusColorUtil;
 
@@ -13,9 +14,10 @@ import java.util.Map;
 
 /**
  * Created by TempCw on 2017/1/10.
+ * 当一个fragment中有多个Presenter使用Map来管理
  */
 
-public abstract class AbsMvpMapFragment extends Fragment{
+public abstract class AbsMvpMapFragment extends BaseFragment{
     private Map<AbsMvpPresenter,IMvpView> mvpMap;
 
     @Override
@@ -23,7 +25,7 @@ public abstract class AbsMvpMapFragment extends Fragment{
         super.onCreate(savedInstanceState);
         mvpMap=new HashMap<>();
         bindPresenter();
-        StatusColorUtil.applyKitKatTranslucency(getActivity());
+//        StatusColorUtil.applyKitKatTranslucency(getActivity());
     }
     public abstract void bindPresenter();
 

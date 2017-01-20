@@ -43,6 +43,39 @@
 
         <item name="android:textViewStyle">@style/textStyle</item>
     </style>
+    <style name="Base.Theme.WebViewTheme" parent="android:Theme.Holo.Light">
+
+        <!-- Window Style -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="android:windowAnimationStyle">@style/Oceansoft.Animation.Activity</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+
+        <item name="android:listViewStyle">@style/listViewStyle</item>
+
+        <item name="android:gridViewStyle">@style/gridViewStyle</item>
+
+        <!--<item name="android:dialogTheme">@style/alertDiolag</item>-->
+
+        <item name="android:progressBarStyleHorizontal">@style/progressBarStyleHorizontal</item>
+
+        <!--<item name="android:radioButtonStyle">@style/radioButtonStyle</item>-->
+
+        <item name="android:actionBarStyle">@style/actionbarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ab_home_as_up</item>
+
+        <!-- <item name="android:windowTranslucentNavigation">true</item> -->
+        <item name="android:actionMenuTextAppearance">@style/ActionBar.Menu.TextAppearance
+        </item>
+
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+
+        <item name="android:buttonStyle">@style/buttonStyle</item>
+
+        <item name="android:editTextStyle">@style/editTextStyle</item>
+
+        <item name="android:textViewStyle">@style/textStyle</item>
+    </style>
     <style name="Oceansoft.Animation.Activity" parent="android:Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
         <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>

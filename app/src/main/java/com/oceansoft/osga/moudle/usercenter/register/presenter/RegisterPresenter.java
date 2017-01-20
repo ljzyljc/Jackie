@@ -13,15 +13,18 @@ import com.oceansoft.osga.moudle.usercenter.register.view.IRegisterView;
  */
 
 public class RegisterPresenter extends BasePresenter<RegisterModel,IRegisterView> {
-    private RegisterModel registerModel;
 
     public RegisterPresenter(Context context) {
         super(context);
-        registerModel=new RegisterModel(context);
     }
 
-    public void getAuthCode(String tel,String type){
-        this.registerModel.getAuthCode(tel, type, new RegisterModel.OnGetAutoResultListener() {
+    @Override
+    public RegisterModel bindModel() {
+        return new RegisterModel(getContext());
+    }
+
+    public void getAuthCode(String tel, String type){
+        getModel().getAuthCode(tel, type, new RegisterModel.OnGetAutoResultListener() {
             @Override
             public void onGetAuthCodeSuccess(RegisterAutoCodeInfo autoCodeInfo) {
                 getView().getAutoCode(autoCodeInfo);
@@ -36,7 +39,7 @@ public class RegisterPresenter extends BasePresenter<RegisterModel,IRegisterView
 
     }
     public void register(String username,String password,String authcode){
-        this.registerModel.userRegister(username, password, authcode, new RegisterModel.OnReregisterResultListener() {
+        getModel().userRegister(username, password, authcode, new RegisterModel.OnReregisterResultListener() {
             @Override
             public void onRegisterStart() {
                 getView().onStartLoading();
@@ -64,6 +67,8 @@ public class RegisterPresenter extends BasePresenter<RegisterModel,IRegisterView
 
     }
 
-
-
+    @Override
+    public void Onunsubscribe() {
+        getModel().unsubscribe();
+    }
 }

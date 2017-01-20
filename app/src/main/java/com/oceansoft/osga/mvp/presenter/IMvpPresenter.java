@@ -12,6 +12,6 @@ public interface IMvpPresenter<V extends IMvpView> {
 
     public void detachView();
 
-    void onUnsubsrible();
+//    void onUnsubsrible();
 
 }

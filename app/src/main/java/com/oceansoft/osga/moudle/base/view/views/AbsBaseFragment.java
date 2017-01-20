@@ -13,7 +13,8 @@ import com.oceansoft.osga.mvp.view.impl.AbsMvpFragment;
 
 
 /**
- * Created by TempCw on 2017/1/10.
+ * Created by Jackie on 2017/1/10.
+ * 当一个Fragment中只有一个Presenter
  */
 
 public abstract class AbsBaseFragment<P extends BasePresenter,V extends IMvpView> extends AbsMvpFragment<P,V> {

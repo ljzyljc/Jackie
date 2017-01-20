@@ -28,20 +28,7 @@ public abstract class AbsBaseActivity<P extends BasePresenter,V extends IMvpView
     public V bindView() {
         return null;
     }
-    public void bindNavagation(int id, int text, final Activity activity){
-        DefaultNavigation.Builder builder=new
-                DefaultNavigation.Builder(activity, (ViewGroup) findViewById(id));
-        builder.setCenterText(text)
-                .setLeftImg(R.drawable.btn_node_pre_xml)
-                .setLeftImgOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        activity.finish();
-                    }
-                })
-                .create();
 
-    }
 
     private View contentView;
 

@@ -11,7 +11,8 @@ import com.oceansoft.osga.mvp.view.impl.AbsMvpMapFragment;
 
 
 /**
- * Created by TempCw on 2017/1/10.
+ * Created by Jackie on 2017/1/10.
+ * 当一个Fragment中有多个Presenter,使用Map来管理
  */
 
 public abstract class AbsBaseMapFragment extends AbsMvpMapFragment {

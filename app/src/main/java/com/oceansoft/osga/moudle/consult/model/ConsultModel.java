@@ -26,17 +26,16 @@ import rx.subscriptions.CompositeSubscription;
 public class ConsultModel extends AbsBaseModel {
     private CompositeSubscription mCompositeSub=new CompositeSubscription();
 
-
-
     public ConsultModel(Context context) {
         super(context);
     }
-    public void getMatterList(final OnLoadLister onLoadLister){
+
+    public void getMatterList(int pageNum,final OnLoadLister onLoadLister){
         ConsultRequestbean consultRequestbean=new ConsultRequestbean();
         consultRequestbean.setNumPerPage(10);
         consultRequestbean.setKeywords("");
         consultRequestbean.setPt("A");
-        consultRequestbean.setPageNum(1);
+        consultRequestbean.setPageNum(pageNum);
         Gson gson=new Gson();
         String consultJson=gson.toJson(consultRequestbean);
         RequestBody requestBody=RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"),consultJson);
@@ -65,15 +64,15 @@ public class ConsultModel extends AbsBaseModel {
                 });
         mCompositeSub.add(subscription);
     }
-
-
-
     @Override
-    public void unsubscribe() {
+    public void unsubscribe(){
         if (mCompositeSub!=null){
             mCompositeSub=null;
         }
     }
+
+
+
     public interface OnLoadLister{
         void onSuccess(ConsultMatter consultMatter);
 

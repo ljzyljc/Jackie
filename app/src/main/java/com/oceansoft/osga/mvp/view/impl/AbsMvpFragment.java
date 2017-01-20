@@ -10,6 +10,7 @@ import android.view.WindowManager;
 
 import com.oceansoft.osga.R;
 import com.oceansoft.osga.mvp.presenter.impl.AbsMvpPresenter;
+import com.oceansoft.osga.mvp.view.BaseFragment;
 import com.oceansoft.osga.mvp.view.IMvpView;
 import com.oceansoft.osga.utils.StatusColorUtil;
 import com.oceansoft.osga.utils.SystemBarTintManager;
@@ -19,15 +20,20 @@ import com.oceansoft.osga.utils.SystemBarTintManager;
  * Created by TempCw on 2017/1/10.
  */
 
-public abstract class AbsMvpFragment<P extends AbsMvpPresenter,V extends IMvpView>extends Fragment{
+public abstract class AbsMvpFragment<P extends AbsMvpPresenter,V extends IMvpView>extends BaseFragment{
     private P presenter;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         this.presenter=bindPresenter();
-        //设置状态栏的颜色和标题栏一致
-        StatusColorUtil.applyKitKatTranslucency(getActivity());
+        //绑定视图
+        if (presenter!=null){
+            presenter.attachView(bindView());
+        }
+
+//        //设置状态栏的颜色和标题栏一致
+//        StatusColorUtil.applyKitKatTranslucency(getActivity());
     }
 
 

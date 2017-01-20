@@ -1,7 +1,10 @@
 package com.oceansoft.osga.http.rxjavahttp;
 
 
+import com.oceansoft.osga.config.Config;
+import com.oceansoft.osga.config.SharePreferenceManager;
 import com.oceansoft.osga.moudle.consult.bean.ConsultMatter;
+import com.oceansoft.osga.moudle.download.DownLoadMessage;
 import com.oceansoft.osga.moudle.home.bean.GridItem;
 import com.oceansoft.osga.moudle.home.bean.NewsBean;
 import com.oceansoft.osga.moudle.usercenter.login.bean.LoginInfo;
@@ -16,6 +19,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Url;
 import rx.Observable;
 
 /**
@@ -24,6 +28,8 @@ import rx.Observable;
 
 public interface MainApi {
 
+    public static final String version=String.valueOf(Config.getLocalVersionCode());
+
     //=====================主页==========================
     //viewpager
     @GET("econsole/api/news/top/3")
@@ -31,7 +37,9 @@ public interface MainApi {
     //获取GirdView信息
     @GET("econsole/api/app/v2/15/1")
     Observable<GridItem> getGridViewInof();
-
+    //检测APP版本   动态Url
+    @GET
+    Observable<DownLoadMessage>getVersionMessage(@Url String url);
 
 
 

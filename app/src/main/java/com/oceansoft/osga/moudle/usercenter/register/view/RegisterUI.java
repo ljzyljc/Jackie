@@ -57,8 +57,6 @@ public class RegisterUI extends AbsMvpMapActivity implements View.OnClickListene
                    bu_captcha.setText("获取验证码");
                    break;
            }
-
-
         }
     };
 
